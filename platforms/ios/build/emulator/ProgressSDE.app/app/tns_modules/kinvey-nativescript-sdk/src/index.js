@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var kinvey_1 = require("kinvey-js-sdk/dist/kinvey");
+exports.Kinvey = kinvey_1.Kinvey;
+var request_1 = require("kinvey-js-sdk/dist/request");
+var identity_1 = require("kinvey-js-sdk/dist/identity");
+var activeUserHelper_1 = require("kinvey-js-sdk/dist/entity/src/activeUserHelper");
+var cache_1 = require("./cache");
+var http_1 = require("./http");
+var popup_1 = require("./popup");
+var push_1 = require("./push");
+var secure_1 = require("./secure");
+request_1.CacheRack.useCacheMiddleware(new cache_1.CacheMiddleware());
+request_1.NetworkRack.useHttpMiddleware(new http_1.HttpMiddleware());
+identity_1.MobileIdentityConnect.usePopupClass(popup_1.Popup);
+activeUserHelper_1.ActiveUserHelper.useStorage(secure_1.SecureStorage);
+kinvey_1.Kinvey.Push = new push_1.Push();

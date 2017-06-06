@@ -1,0 +1,28 @@
+<page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:drawer="nativescript-telerik-ui/sidedrawer" xmlns:widgets="shared/widgets" xmlns:lv="nativescript-telerik-ui/listview" xmlns:statusbar="nativescript-statusbar" xmlns:dd="nativescript-drop-down" loaded="onPageLoad">
+    <statusbar:StatusBar ios:barStyle="light" />
+    <page.actionBar>
+        <action-bar title="Search">
+            <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
+            <action-bar.actionItems>
+                <ios>
+                    <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
+                </ios>
+            </action-bar.actionItems>
+        </action-bar>
+    </page.actionBar>
+    <drawer:rad-side-drawer id="drawer">
+        <drawer:rad-side-drawer.mainContent>
+           <GridLayout rows="auto, auto, *" columns="auto, *" loaded="contentLoaded">
+                <dd:DropDown items="{{items}}" backroundColor="red" selectedIndex="{{ selectedIndex}}" opened="dropDownOpened" selectedIndexChanged="dropDownSelectedIndexChanged" row="0" colSpan="2" />
+                <Label text="Selected Index:" row="1" col="0" fontSize="18" verticalAlignment="bottom" />
+                <TextField text="{{ selectedIndex }}" row="1" col="1" />
+                <Image width="75%" src="https://d3ba5g9yhie26y.cloudfront.net/img/progress-logo.png" row="2" />
+                <!--<Label class="title" textWrap="true" isEditable="false" text="The quick brown fox jumped over the lazy dog." row="4" fontSize="18" />-->
+            </GridLayout>
+
+        </drawer:rad-side-drawer.mainContent>
+        <drawer:rad-side-drawer.drawerContent>
+            <widgets:drawer-content />
+        </drawer:rad-side-drawer.drawerContent>
+    </drawer:rad-side-drawer>
+</page>

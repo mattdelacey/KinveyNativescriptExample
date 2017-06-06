@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-telerik-ui@2.0.1",
+        "scope": null,
+        "escapedName": "nativescript-telerik-ui",
+        "name": "nativescript-telerik-ui",
+        "rawSpec": "2.0.1",
+        "spec": "2.0.1",
+        "type": "version"
+      },
+      "/Users/delacey/nativescript/Progress SDE"
+    ]
+  ],
+  "_from": "nativescript-telerik-ui@2.0.1",
+  "_id": "nativescript-telerik-ui@2.0.1",
+  "_inCache": true,
+  "_location": "/nativescript-telerik-ui",
+  "_nodeVersion": "6.10.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-telerik-ui-2.0.1.tgz_1493897178727_0.5110992705449462"
+  },
+  "_npmUser": {
+    "name": "dginev",
+    "email": "deyan.ginev@telerik.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-telerik-ui@2.0.1",
+    "scope": null,
+    "escapedName": "nativescript-telerik-ui",
+    "name": "nativescript-telerik-ui",
+    "rawSpec": "2.0.1",
+    "spec": "2.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-telerik-ui/-/nativescript-telerik-ui-2.0.1.tgz",
+  "_shasum": "3639f3e93eaef64fb2aa2dc4aead5269ea7c8ba0",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-telerik-ui@2.0.1",
+  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "author": {
+    "name": "Progress"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/nativescript-ui-feedback/issues"
+  },
+  "dependencies": {},
+  "description": "Progress NativeScript UI is a set of rich-ui, cross-platform components based on the native iOS and Android libraries provided by Telerik.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "3639f3e93eaef64fb2aa2dc4aead5269ea7c8ba0",
+    "tarball": "https://registry.npmjs.org/nativescript-telerik-ui/-/nativescript-telerik-ui-2.0.1.tgz"
+  },
+  "files": [
+    "**/*.js",
+    "**/*.metadata.json",
+    "**/*.d.ts",
+    "**/*.aar",
+    "**/*.framework",
+    "platforms/android/include.gradle",
+    "!platforms/ios/TelerikAppFeedback.framework/",
+    "!platforms/android/Chart*.aar",
+    "!platforms/android/Feedback*.aar",
+    "!platforms/android/Gauges*.aar",
+    "!platforms/android/Input*.aar",
+    "!calendar/",
+    "!chart/",
+    "!dataform/",
+    "!feedback/",
+    "!autocomplete/",
+    "!gauges/",
+    "!hooks/"
+  ],
+  "keywords": [
+    "nativescript",
+    "ui",
+    "sidedrawer",
+    "listview"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "maintainers": [
+    {
+      "name": "dginev",
+      "email": "deyan.ginev@telerik.com"
+    },
+    {
+      "name": "hdeshev",
+      "email": "hristo@deshev.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    }
+  ],
+  "name": "nativescript-telerik-ui",
+  "nativescript": {
+    "ios": "3.0.0",
+    "android": "3.0.0"
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/telerik/nativescript-ui-samples.git"
+  },
+  "scripts": {
+    "postinstall": "node ./scripts/email-prompt.js dev_uins_free",
+    "preinstall": "node ./scripts/eula-prompt.js"
+  },
+  "version": "2.0.1"
+}

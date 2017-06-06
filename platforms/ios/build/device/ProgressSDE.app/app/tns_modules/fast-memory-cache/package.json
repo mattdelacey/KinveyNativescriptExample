@@ -1,0 +1,113 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "fast-memory-cache@2.0.4",
+        "scope": null,
+        "escapedName": "fast-memory-cache",
+        "name": "fast-memory-cache",
+        "rawSpec": "2.0.4",
+        "spec": "2.0.4",
+        "type": "version"
+      },
+      "/Users/delacey/nativescript/CoreSDK"
+    ]
+  ],
+  "_from": "fast-memory-cache@2.0.4",
+  "_id": "fast-memory-cache@2.0.4",
+  "_inCache": true,
+  "_location": "/fast-memory-cache",
+  "_nodeVersion": "5.4.0",
+  "_npmUser": {
+    "name": "ikokostya",
+    "email": "ikokostya@gmail.com"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "fast-memory-cache@2.0.4",
+    "scope": null,
+    "escapedName": "fast-memory-cache",
+    "name": "fast-memory-cache",
+    "rawSpec": "2.0.4",
+    "spec": "2.0.4",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/kinvey-js-sdk"
+  ],
+  "_resolved": "https://registry.npmjs.org/fast-memory-cache/-/fast-memory-cache-2.0.4.tgz",
+  "_shasum": "aaac59efb56c17fe4ebf6f7c095db210f58cfb4d",
+  "_shrinkwrap": null,
+  "_spec": "fast-memory-cache@2.0.4",
+  "_where": "/Users/delacey/nativescript/CoreSDK",
+  "author": {
+    "name": "Konstantin Ikonnikov",
+    "email": "ikokostya@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mdevils/fast-memory-cache/issues"
+  },
+  "contributors": [
+    {
+      "name": "Dulin Marat",
+      "email": "mdevils@yandex.ru"
+    }
+  ],
+  "dependencies": {},
+  "description": "Simple in-memory cache implementation",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "jscs": "^1.7.3",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1",
+    "unit-coverage": "^3.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "aaac59efb56c17fe4ebf6f7c095db210f58cfb4d",
+    "tarball": "https://registry.npmjs.org/fast-memory-cache/-/fast-memory-cache-2.0.4.tgz"
+  },
+  "gitHead": "74dc9840ba551e565a7e922c908db1f308d56bd3",
+  "homepage": "https://github.com/mdevils/fast-memory-cache#readme",
+  "keywords": [
+    "memory",
+    "cache"
+  ],
+  "license": "MIT",
+  "main": "lib/memory-cache.js",
+  "maintainers": [
+    {
+      "name": "mdevils",
+      "email": "mdevils@yandex.ru"
+    },
+    {
+      "name": "ikokostya",
+      "email": "ikokostya@gmail.com"
+    }
+  ],
+  "name": "fast-memory-cache",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdevils/fast-memory-cache.git"
+  },
+  "scripts": {
+    "coverage": "unit-coverage run -p common",
+    "coverage-html": "unit-coverage run -p common -R html -o coverage.html",
+    "test": "jscs lib && jshint lib && mocha test"
+  },
+  "unit-coverage": {
+    "common": [
+      "-s",
+      "lib/**",
+      "-t",
+      "test/**",
+      "--",
+      "test"
+    ]
+  },
+  "version": "2.0.4"
+}

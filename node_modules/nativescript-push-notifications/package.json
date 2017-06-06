@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-push-notifications@^0.1.3",
+        "scope": null,
+        "escapedName": "nativescript-push-notifications",
+        "name": "nativescript-push-notifications",
+        "rawSpec": "^0.1.3",
+        "spec": ">=0.1.3 <0.2.0",
+        "type": "range"
+      },
+      "/Users/delacey/nativescript/Progress SDE"
+    ]
+  ],
+  "_from": "nativescript-push-notifications@>=0.1.3 <0.2.0",
+  "_id": "nativescript-push-notifications@0.1.3",
+  "_inCache": true,
+  "_location": "/nativescript-push-notifications",
+  "_nodeVersion": "6.9.4",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/nativescript-push-notifications-0.1.3.tgz_1493910579474_0.8338290045503527"
+  },
+  "_npmUser": {
+    "name": "everlive-system",
+    "email": "alexander.filipov@telerik.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-push-notifications@^0.1.3",
+    "scope": null,
+    "escapedName": "nativescript-push-notifications",
+    "name": "nativescript-push-notifications",
+    "rawSpec": "^0.1.3",
+    "spec": ">=0.1.3 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-push-notifications/-/nativescript-push-notifications-0.1.3.tgz",
+  "_shasum": "d563a511f865bf23ba750e1134962c62beaaf98b",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-push-notifications@^0.1.3",
+  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "author": {
+    "name": "NativeScript Team"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/push-plugin/issues"
+  },
+  "dependencies": {
+    "nativescript-hook": "0.2.1"
+  },
+  "description": "The code for the Push Plugin for NativeScript.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d563a511f865bf23ba750e1134962c62beaaf98b",
+    "tarball": "https://registry.npmjs.org/nativescript-push-notifications/-/nativescript-push-notifications-0.1.3.tgz"
+  },
+  "gitHead": "6c5fa318df5c6277e94a729ba0f8cbe68be37480",
+  "homepage": "https://github.com/NativeScript/push-plugin#readme",
+  "license": "Apache-2.0",
+  "main": "push-plugin",
+  "maintainers": [
+    {
+      "name": "everlive-system",
+      "email": "alexander.filipov@telerik.com"
+    }
+  ],
+  "name": "nativescript-push-notifications",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    },
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "hooks/before-prepare.js",
+        "inject": true
+      }
+    ]
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/push-plugin.git"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "typings": "./definitions.d.ts",
+  "version": "0.1.3"
+}

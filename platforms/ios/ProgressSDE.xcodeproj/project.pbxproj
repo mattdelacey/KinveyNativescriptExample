@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		02DFF92E8EDC4613886E331E /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C1A7FAD81C49D194E78621 /* Default-667h@2x.png */; };
+		04756C2CEA604965B4ED3DCA /* TelerikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA812201408B4AF98A120134 /* TelerikUI.framework */; };
+		0896D7600A9A45659D7B8C82 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC5C65A64CB44FB6A849540C /* Icon-Small-50.png */; };
+		08DEB1EE14FC4CAFAB21F685 /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 180A064063A445549B25DE7C /* icon-60.png */; };
+		0B0B8FF89E4742B0ADA03FAB /* icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C076922D604E3A9D5A546F /* icon-83.5@2x.png */; };
+		0C508155887C46068A3BA278 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3414E59A6D344239F51C7E4 /* Default-736h@3x.png */; };
+		0C5A07616C03429C8528737E /* Default-Landscape@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A74CDE2C6249CB9531268C /* Default-Landscape@3x.png */; };
+		1610D4574D624BD7BC59A53E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD825F49385B455BA5A43415 /* icon@2x.png */; };
+		1A1B7EED465A46819696EFF3 /* ic_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C67586FA774B5BA38295BA /* ic_menu.png */; };
+		1CFF488416F94057B6468AA9 /* PushPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF56C3AC094B475D8DFCE02C /* PushPlugin.framework */; };
+		1F680AEB92574C3F944171EF /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = AC4549ABE4B842CCA67BE097 /* icon-40.png */; };
+		25F304510B8347CCA44B7D8A /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = C76808654240421B9F2A191C /* iTunesArtwork.png */; };
+		2743CAAF93B44565BCBB5DB5 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F258A3E32B04EABB6C01488 /* icon-72.png */; };
+		2CD21C615C554EC89783B46A /* icon-76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BADCE1EC746647F093C1AE27 /* icon-76@3x.png */; };
+		3250FABF761A47C399271853 /* PushPlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF56C3AC094B475D8DFCE02C /* PushPlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34EF58BE7E8047FE9241FAC8 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE9ED2C164C42BC89A84C41 /* TNSWidgets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35783BD5C1554F91B5665A52 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01DDAEA1F72945EB8DB68175 /* icon-120.png */; };
+		3D2DEC2203FC4E6DAC2EF034 /* ic_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C473E0401AD5488386469DF1 /* ic_menu@2x.png */; };
+		42EBEB5A7E014D1282D4D4DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3064B442D0A14C73946402A3 /* Default.png */; };
+		4321D94A5D534A2696F8CD70 /* icon-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 553A186B095A414F94E7FE04 /* icon-20@2x.png */; };
+		4373AC56F09E44748B01D905 /* icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 12609074810A4809A097554A /* icon-Small.png */; };
+		4B381500A7D845F5BBA76CD2 /* icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C715A4D9A6F2474EB329EDBF /* icon-29@3x.png */; };
+		4CC65BD0CCB6457CBA38D889 /* icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E5EF4A34F84ECF89F5F32C /* icon-Small@2x.png */; };
+		518387ACC07A4232839E8824 /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED30E9496534BB3A1A1EE4A /* icon-50.png */; };
+		52CF5FB3C1584B5D8501BF6D /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE9ED2C164C42BC89A84C41 /* TNSWidgets.framework */; };
+		5BD4D4D173BA47749E59DE98 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE4C75677F44AC8F623FDA /* icon-29.png */; };
+		5E41E89A73524CD9BD53645E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF009092C254E0B9D61C610 /* icon.png */; };
+		65389D3BBB494B36959A76C4 /* Default-Landscape-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C44C9B41346B41CC9BBF96E2 /* Default-Landscape-568h@2x.png */; };
+		71F5CDB9956B42A191C20BD1 /* icon-57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AD57A7A5445E48F573298 /* icon-57@2x.png */; };
+		734C787F408540BEA4E3B5C9 /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB58D0CEB86F48DB93E5351C /* icon-76@2x.png */; };
+		76F96153A2FD4D2D8C7E934E /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0C4846CD684773BC7DE908 /* Default-Portrait@2x.png */; };
+		780FDB13DA7E4D66940DC517 /* icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B4F44180AB545268025839D /* icon-Small@3x.png */; };
+		7E51DB035F5A4CB79DE8F9E3 /* icon-72@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F6D0FB6CF241BEABC1AC28 /* icon-72@3x.png */; };
+		84040EA2B22141ADAFA17566 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8178C7ECCC6C4AC8972A6562 /* Default@2x.png */; };
+		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		86F3245172164A5A804D39B2 /* icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 96FC391EC3A249FDBBD6FE22 /* icon-20.png */; };
+		872C181FCFF34566A5A17C13 /* icon-50@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23292C92D2BF4C999E841029 /* icon-50@3x.png */; };
+		8AD7561A1D7A466F9C95FFC9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70EF4FDA606410BAFD63959 /* Icon-Small-50@2x.png */; };
+		922EF9C6D97B42DDAEC7CF19 /* icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7124ED920134E3BAC1E7875 /* icon-50@2x.png */; };
+		9B68721A55FF4B729608B553 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 52D2ABB566FC48C692928ABD /* icon-76.png */; };
+		9ED4BFC0AD834F8B8001FB3A /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80123438433D403BB230EE41 /* icon-40@2x.png */; };
+		A7D729751E174F31B9A3CB83 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77574C6D956547BDB5C5ADD6 /* icon-72@2x.png */; };
+		AA7E9FEA2530460FBAD3334B /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F914E5758074199A3EC5F32 /* Default-Landscape@2x.png */; };
+		AB93EFF565C44B259DF1DDD4 /* TelerikUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA812201408B4AF98A120134 /* TelerikUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD202C3D8FD847BCB592A5E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A06904C034CCE9C0B5A40 /* LaunchScreen.xib */; };
+		B4DF417EB29D4310AC06D04B /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 171C74B23ABB4765BC7382B7 /* Default-Landscape.png */; };
+		B65EB7EE9A574CCE8E811FE1 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D40F1914824541A6F42B84 /* icon-60@2x.png */; };
+		BAB8161C87594FF29CAD9A0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AB85CD6D50740D782A3626F /* Default-568h@2x.png */; };
+		BCE4437C01B64870EF0F71BD /* Pods_ProgressSDE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDDA30E2B05052A32578542 /* Pods_ProgressSDE.framework */; };
+		BEE1D827C9874517893EA12A /* kinvey-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D22E775FDD13479E847E0B97 /* kinvey-logo.png */; };
+		C1CD67A52C804E548720F62C /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0688F7806FC64F7E84268031 /* icon-57.png */; };
+		C290BE2A59C84F21A72BB176 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F040942F4CD74D13A95B3CA3 /* icon-60@3x.png */; };
+		CAE3B82F6D4A436B8A6DDFB8 /* icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15EC80BF694438FB8D27E4D /* icon-40@3x.png */; };
+		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
+		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
+		D5D87C66F53E4E21B5BB70B0 /* icon-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A2051C573684B219BD17E41 /* icon-20@3x.png */; };
+		D9F1AF4B02FD46C6B26BD63B /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1C9B30572C4FE4AF5C5C9C /* Default-Portrait.png */; };
+		DC4612378C234341B5797761 /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B079676406084C798377FCB5 /* ic_menu@3x.png */; };
+		E4960106F39C4DA3AC518E45 /* icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AF44FB28BCE48A889766573 /* icon-29@2x.png */; };
+		F84952B99C314AFB84B13309 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FCCB68B704483F99058953 /* iTunesArtwork@2x.png */; };
+		FD69B1E425574B7DB5058A4D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = CDDE6AFD8C91458E85633BB6 /* Contents.json */; };
+		FDC782AE89D84A95B79936C0 /* Default-Landscape-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F4723AB38247EC8D8AAE29 /* Default-Landscape-667h@2x.png */; };
+		FE25D182849149F89B6FE690 /* icon-57@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C875EDB2778410290FA9CB1 /* icon-57@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85F5BDFC1A9363BE006B9701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3250FABF761A47C399271853 /* PushPlugin.framework in Embed Frameworks */,
+				AB93EFF565C44B259DF1DDD4 /* TelerikUI.framework in Embed Frameworks */,
+				34EF58BE7E8047FE9241FAC8 /* TNSWidgets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01DDAEA1F72945EB8DB68175 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120.png"; path = "ProgressSDE/Resources/icon-120.png"; sourceTree = "<group>"; };
+		0688F7806FC64F7E84268031 /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57.png"; path = "ProgressSDE/Resources/icon-57.png"; sourceTree = "<group>"; };
+		06F6D0FB6CF241BEABC1AC28 /* icon-72@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@3x.png"; path = "ProgressSDE/Resources/icon-72@3x.png"; sourceTree = "<group>"; };
+		08A74CDE2C6249CB9531268C /* Default-Landscape@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@3x.png"; path = "ProgressSDE/Resources/Default-Landscape@3x.png"; sourceTree = "<group>"; };
+		0B4F44180AB545268025839D /* icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-Small@3x.png"; path = "ProgressSDE/Resources/icon-Small@3x.png"; sourceTree = "<group>"; };
+		0C875EDB2778410290FA9CB1 /* icon-57@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57@3x.png"; path = "ProgressSDE/Resources/icon-57@3x.png"; sourceTree = "<group>"; };
+		10C67586FA774B5BA38295BA /* ic_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_menu.png; path = ProgressSDE/Resources/ic_menu.png; sourceTree = "<group>"; };
+		12609074810A4809A097554A /* icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-Small.png"; path = "ProgressSDE/Resources/icon-Small.png"; sourceTree = "<group>"; };
+		171C74B23ABB4765BC7382B7 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "ProgressSDE/Resources/Default-Landscape.png"; sourceTree = "<group>"; };
+		180A064063A445549B25DE7C /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60.png"; path = "ProgressSDE/Resources/icon-60.png"; sourceTree = "<group>"; };
+		1A1C9B30572C4FE4AF5C5C9C /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "ProgressSDE/Resources/Default-Portrait.png"; sourceTree = "<group>"; };
+		22E5EF4A34F84ECF89F5F32C /* icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-Small@2x.png"; path = "ProgressSDE/Resources/icon-Small@2x.png"; sourceTree = "<group>"; };
+		23292C92D2BF4C999E841029 /* icon-50@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-50@3x.png"; path = "ProgressSDE/Resources/icon-50@3x.png"; sourceTree = "<group>"; };
+		27C1A7FAD81C49D194E78621 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-667h@2x.png"; path = "ProgressSDE/Resources/Default-667h@2x.png"; sourceTree = "<group>"; };
+		3064B442D0A14C73946402A3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ProgressSDE/Resources/Default.png; sourceTree = "<group>"; };
+		3F258A3E32B04EABB6C01488 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "ProgressSDE/Resources/icon-72.png"; sourceTree = "<group>"; };
+		52D2ABB566FC48C692928ABD /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76.png"; path = "ProgressSDE/Resources/icon-76.png"; sourceTree = "<group>"; };
+		54FCCB68B704483F99058953 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "ProgressSDE/Resources/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		553A186B095A414F94E7FE04 /* icon-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-20@2x.png"; path = "ProgressSDE/Resources/icon-20@2x.png"; sourceTree = "<group>"; };
+		55D40F1914824541A6F42B84 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60@2x.png"; path = "ProgressSDE/Resources/icon-60@2x.png"; sourceTree = "<group>"; };
+		5AB85CD6D50740D782A3626F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ProgressSDE/Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		63C076922D604E3A9D5A546F /* icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-83.5@2x.png"; path = "ProgressSDE/Resources/icon-83.5@2x.png"; sourceTree = "<group>"; };
+		6AF44FB28BCE48A889766573 /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29@2x.png"; path = "ProgressSDE/Resources/icon-29@2x.png"; sourceTree = "<group>"; };
+		6CDDA30E2B05052A32578542 /* Pods_ProgressSDE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressSDE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0C4846CD684773BC7DE908 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x.png"; path = "ProgressSDE/Resources/Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		71F4723AB38247EC8D8AAE29 /* Default-Landscape-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape-667h@2x.png"; path = "ProgressSDE/Resources/Default-Landscape-667h@2x.png"; sourceTree = "<group>"; };
+		77574C6D956547BDB5C5ADD6 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "ProgressSDE/Resources/icon-72@2x.png"; sourceTree = "<group>"; };
+		7A2051C573684B219BD17E41 /* icon-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-20@3x.png"; path = "ProgressSDE/Resources/icon-20@3x.png"; sourceTree = "<group>"; };
+		7F914E5758074199A3EC5F32 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x.png"; path = "ProgressSDE/Resources/Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		80123438433D403BB230EE41 /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40@2x.png"; path = "ProgressSDE/Resources/icon-40@2x.png"; sourceTree = "<group>"; };
+		8178C7ECCC6C4AC8972A6562 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ProgressSDE/Resources/Default@2x.png"; sourceTree = "<group>"; };
+		858B832E18CA111C00AB12DE /* ProgressSDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressSDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858B833918CA111C00AB12DE /* ProgressSDE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressSDE-Info.plist"; sourceTree = "<group>"; };
+		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		858B833F18CA111C00AB12DE /* ProgressSDE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressSDE-Prefix.pch"; sourceTree = "<group>"; };
+		858B843318CA22B800AB12DE /* ProgressSDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressSDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED30E9496534BB3A1A1EE4A /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-50.png"; path = "ProgressSDE/Resources/icon-50.png"; sourceTree = "<group>"; };
+		96FC391EC3A249FDBBD6FE22 /* icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-20.png"; path = "ProgressSDE/Resources/icon-20.png"; sourceTree = "<group>"; };
+		9A3AD57A7A5445E48F573298 /* icon-57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57@2x.png"; path = "ProgressSDE/Resources/icon-57@2x.png"; sourceTree = "<group>"; };
+		9BCE4C75677F44AC8F623FDA /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29.png"; path = "ProgressSDE/Resources/icon-29.png"; sourceTree = "<group>"; };
+		9EE9ED2C164C42BC89A84C41 /* TNSWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		A7124ED920134E3BAC1E7875 /* icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-50@2x.png"; path = "ProgressSDE/Resources/icon-50@2x.png"; sourceTree = "<group>"; };
+		AC4549ABE4B842CCA67BE097 /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40.png"; path = "ProgressSDE/Resources/icon-40.png"; sourceTree = "<group>"; };
+		AFF009092C254E0B9D61C610 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ProgressSDE/Resources/icon.png; sourceTree = "<group>"; };
+		B079676406084C798377FCB5 /* ic_menu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_menu@3x.png"; path = "ProgressSDE/Resources/ic_menu@3x.png"; sourceTree = "<group>"; };
+		BADCE1EC746647F093C1AE27 /* icon-76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76@3x.png"; path = "ProgressSDE/Resources/icon-76@3x.png"; sourceTree = "<group>"; };
+		BC5C65A64CB44FB6A849540C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "ProgressSDE/Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		C3414E59A6D344239F51C7E4 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-736h@3x.png"; path = "ProgressSDE/Resources/Default-736h@3x.png"; sourceTree = "<group>"; };
+		C44C9B41346B41CC9BBF96E2 /* Default-Landscape-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape-568h@2x.png"; path = "ProgressSDE/Resources/Default-Landscape-568h@2x.png"; sourceTree = "<group>"; };
+		C473E0401AD5488386469DF1 /* ic_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_menu@2x.png"; path = "ProgressSDE/Resources/ic_menu@2x.png"; sourceTree = "<group>"; };
+		C715A4D9A6F2474EB329EDBF /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29@3x.png"; path = "ProgressSDE/Resources/icon-29@3x.png"; sourceTree = "<group>"; };
+		C76808654240421B9F2A191C /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = ProgressSDE/Resources/iTunesArtwork.png; sourceTree = "<group>"; };
+		CB58D0CEB86F48DB93E5351C /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76@2x.png"; path = "ProgressSDE/Resources/icon-76@2x.png"; sourceTree = "<group>"; };
+		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
+		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
+		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
+		CDDE6AFD8C91458E85633BB6 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = Contents.json; path = ProgressSDE/Resources/Contents.json; sourceTree = "<group>"; };
+		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		D15EC80BF694438FB8D27E4D /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40@3x.png"; path = "ProgressSDE/Resources/icon-40@3x.png"; sourceTree = "<group>"; };
+		D22E775FDD13479E847E0B97 /* kinvey-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kinvey-logo.png"; path = "ProgressSDE/Resources/kinvey-logo.png"; sourceTree = "<group>"; };
+		D70EF4FDA606410BAFD63959 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "ProgressSDE/Resources/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		D91A06904C034CCE9C0B5A40 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ProgressSDE/Resources/LaunchScreen.xib; sourceTree = "<group>"; };
+		DD825F49385B455BA5A43415 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "ProgressSDE/Resources/icon@2x.png"; sourceTree = "<group>"; };
+		DF56C3AC094B475D8DFCE02C /* PushPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushPlugin.framework; path = "$(SRCROOT)/../../node_modules/nativescript-push-notifications/platforms/ios/PushPlugin.framework"; sourceTree = "<group>"; };
+		F040942F4CD74D13A95B3CA3 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60@3x.png"; path = "ProgressSDE/Resources/icon-60@3x.png"; sourceTree = "<group>"; };
+		FA812201408B4AF98A120134 /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = "$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios/TelerikUI.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		858B83F418CA22B800AB12DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFF488416F94057B6468AA9 /* PushPlugin.framework in Frameworks */,
+				04756C2CEA604965B4ED3DCA /* TelerikUI.framework in Frameworks */,
+				52CF5FB3C1584B5D8501BF6D /* TNSWidgets.framework in Frameworks */,
+				BCE4437C01B64870EF0F71BD /* Pods_ProgressSDE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		858B832518CA111C00AB12DE = {
+			isa = PBXGroup;
+			children = (
+				E070579D1B39A9D000214BF1 /* Resources */,
+				858B833718CA111C00AB12DE /* ProgressSDE */,
+				858B833018CA111C00AB12DE /* Frameworks */,
+				858B832F18CA111C00AB12DE /* Products */,
+				B5728173F753323E90CFB109 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		858B832F18CA111C00AB12DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858B832E18CA111C00AB12DE /* ProgressSDE.app */,
+				858B843318CA22B800AB12DE /* ProgressSDE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858B833018CA111C00AB12DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF56C3AC094B475D8DFCE02C /* PushPlugin.framework */,
+				FA812201408B4AF98A120134 /* TelerikUI.framework */,
+				9EE9ED2C164C42BC89A84C41 /* TNSWidgets.framework */,
+				6CDDA30E2B05052A32578542 /* Pods_ProgressSDE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858B833718CA111C00AB12DE /* ProgressSDE */ = {
+			isa = PBXGroup;
+			children = (
+				CD45EE7A18DC2D5800FB50C0 /* app */,
+				858B833818CA111C00AB12DE /* Supporting Files */,
+			);
+			path = ProgressSDE;
+			sourceTree = "<group>";
+		};
+		858B833818CA111C00AB12DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDF4743E1BA4855C0087EA85 /* build.xcconfig */,
+				CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */,
+				CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */,
+				858B833918CA111C00AB12DE /* ProgressSDE-Info.plist */,
+				858B833A18CA111C00AB12DE /* InfoPlist.strings */,
+				CD62955C1BB2678900AE3A93 /* main.m */,
+				858B833F18CA111C00AB12DE /* ProgressSDE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5728173F753323E90CFB109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E070579D1B39A9D000214BF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDDE6AFD8C91458E85633BB6 /* Contents.json */,
+				5AB85CD6D50740D782A3626F /* Default-568h@2x.png */,
+				27C1A7FAD81C49D194E78621 /* Default-667h@2x.png */,
+				C3414E59A6D344239F51C7E4 /* Default-736h@3x.png */,
+				C44C9B41346B41CC9BBF96E2 /* Default-Landscape-568h@2x.png */,
+				71F4723AB38247EC8D8AAE29 /* Default-Landscape-667h@2x.png */,
+				171C74B23ABB4765BC7382B7 /* Default-Landscape.png */,
+				7F914E5758074199A3EC5F32 /* Default-Landscape@2x.png */,
+				08A74CDE2C6249CB9531268C /* Default-Landscape@3x.png */,
+				1A1C9B30572C4FE4AF5C5C9C /* Default-Portrait.png */,
+				6E0C4846CD684773BC7DE908 /* Default-Portrait@2x.png */,
+				3064B442D0A14C73946402A3 /* Default.png */,
+				8178C7ECCC6C4AC8972A6562 /* Default@2x.png */,
+				BC5C65A64CB44FB6A849540C /* Icon-Small-50.png */,
+				D70EF4FDA606410BAFD63959 /* Icon-Small-50@2x.png */,
+				D91A06904C034CCE9C0B5A40 /* LaunchScreen.xib */,
+				C76808654240421B9F2A191C /* iTunesArtwork.png */,
+				54FCCB68B704483F99058953 /* iTunesArtwork@2x.png */,
+				10C67586FA774B5BA38295BA /* ic_menu.png */,
+				C473E0401AD5488386469DF1 /* ic_menu@2x.png */,
+				B079676406084C798377FCB5 /* ic_menu@3x.png */,
+				01DDAEA1F72945EB8DB68175 /* icon-120.png */,
+				96FC391EC3A249FDBBD6FE22 /* icon-20.png */,
+				553A186B095A414F94E7FE04 /* icon-20@2x.png */,
+				7A2051C573684B219BD17E41 /* icon-20@3x.png */,
+				9BCE4C75677F44AC8F623FDA /* icon-29.png */,
+				6AF44FB28BCE48A889766573 /* icon-29@2x.png */,
+				C715A4D9A6F2474EB329EDBF /* icon-29@3x.png */,
+				AC4549ABE4B842CCA67BE097 /* icon-40.png */,
+				80123438433D403BB230EE41 /* icon-40@2x.png */,
+				D15EC80BF694438FB8D27E4D /* icon-40@3x.png */,
+				8ED30E9496534BB3A1A1EE4A /* icon-50.png */,
+				A7124ED920134E3BAC1E7875 /* icon-50@2x.png */,
+				23292C92D2BF4C999E841029 /* icon-50@3x.png */,
+				0688F7806FC64F7E84268031 /* icon-57.png */,
+				9A3AD57A7A5445E48F573298 /* icon-57@2x.png */,
+				0C875EDB2778410290FA9CB1 /* icon-57@3x.png */,
+				180A064063A445549B25DE7C /* icon-60.png */,
+				55D40F1914824541A6F42B84 /* icon-60@2x.png */,
+				F040942F4CD74D13A95B3CA3 /* icon-60@3x.png */,
+				3F258A3E32B04EABB6C01488 /* icon-72.png */,
+				77574C6D956547BDB5C5ADD6 /* icon-72@2x.png */,
+				06F6D0FB6CF241BEABC1AC28 /* icon-72@3x.png */,
+				52D2ABB566FC48C692928ABD /* icon-76.png */,
+				CB58D0CEB86F48DB93E5351C /* icon-76@2x.png */,
+				BADCE1EC746647F093C1AE27 /* icon-76@3x.png */,
+				63C076922D604E3A9D5A546F /* icon-83.5@2x.png */,
+				12609074810A4809A097554A /* icon-Small.png */,
+				22E5EF4A34F84ECF89F5F32C /* icon-Small@2x.png */,
+				0B4F44180AB545268025839D /* icon-Small@3x.png */,
+				AFF009092C254E0B9D61C610 /* icon.png */,
+				DD825F49385B455BA5A43415 /* icon@2x.png */,
+				D22E775FDD13479E847E0B97 /* kinvey-logo.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		858B83EF18CA22B800AB12DE /* ProgressSDE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "ProgressSDE" */;
+			buildPhases = (
+				860EFE4CE22528A1457D285B /* [CP] Check Pods Manifest.lock */,
+				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
+				858B83F218CA22B800AB12DE /* Sources */,
+				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
+				858B83F418CA22B800AB12DE /* Frameworks */,
+				858B842C18CA22B800AB12DE /* Resources */,
+				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
+				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+				5E5AB4E92EBAC20489CBBC9D /* [CP] Embed Pods Frameworks */,
+				54BDC19DEB90CDBC3B6D851B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressSDE;
+			productName = JDBridgeApp;
+			productReference = 858B843318CA22B800AB12DE /* ProgressSDE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858B832618CA111C00AB12DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNS;
+				LastUpgradeCheck = 500;
+				ORGANIZATIONNAME = Telerik;
+				TargetAttributes = {
+					858B83EF18CA22B800AB12DE = {
+						DevelopmentTeam = 5W7CYNR7UE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "ProgressSDE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 858B832518CA111C00AB12DE;
+			productRefGroup = 858B832F18CA111C00AB12DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				858B83EF18CA22B800AB12DE /* ProgressSDE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		858B842C18CA22B800AB12DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
+				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
+				FD69B1E425574B7DB5058A4D /* Contents.json in Resources */,
+				BAB8161C87594FF29CAD9A0B /* Default-568h@2x.png in Resources */,
+				02DFF92E8EDC4613886E331E /* Default-667h@2x.png in Resources */,
+				0C508155887C46068A3BA278 /* Default-736h@3x.png in Resources */,
+				65389D3BBB494B36959A76C4 /* Default-Landscape-568h@2x.png in Resources */,
+				FDC782AE89D84A95B79936C0 /* Default-Landscape-667h@2x.png in Resources */,
+				B4DF417EB29D4310AC06D04B /* Default-Landscape.png in Resources */,
+				AA7E9FEA2530460FBAD3334B /* Default-Landscape@2x.png in Resources */,
+				0C5A07616C03429C8528737E /* Default-Landscape@3x.png in Resources */,
+				D9F1AF4B02FD46C6B26BD63B /* Default-Portrait.png in Resources */,
+				76F96153A2FD4D2D8C7E934E /* Default-Portrait@2x.png in Resources */,
+				42EBEB5A7E014D1282D4D4DD /* Default.png in Resources */,
+				84040EA2B22141ADAFA17566 /* Default@2x.png in Resources */,
+				0896D7600A9A45659D7B8C82 /* Icon-Small-50.png in Resources */,
+				8AD7561A1D7A466F9C95FFC9 /* Icon-Small-50@2x.png in Resources */,
+				AD202C3D8FD847BCB592A5E3 /* LaunchScreen.xib in Resources */,
+				25F304510B8347CCA44B7D8A /* iTunesArtwork.png in Resources */,
+				F84952B99C314AFB84B13309 /* iTunesArtwork@2x.png in Resources */,
+				1A1B7EED465A46819696EFF3 /* ic_menu.png in Resources */,
+				3D2DEC2203FC4E6DAC2EF034 /* ic_menu@2x.png in Resources */,
+				DC4612378C234341B5797761 /* ic_menu@3x.png in Resources */,
+				35783BD5C1554F91B5665A52 /* icon-120.png in Resources */,
+				86F3245172164A5A804D39B2 /* icon-20.png in Resources */,
+				4321D94A5D534A2696F8CD70 /* icon-20@2x.png in Resources */,
+				D5D87C66F53E4E21B5BB70B0 /* icon-20@3x.png in Resources */,
+				5BD4D4D173BA47749E59DE98 /* icon-29.png in Resources */,
+				E4960106F39C4DA3AC518E45 /* icon-29@2x.png in Resources */,
+				4B381500A7D845F5BBA76CD2 /* icon-29@3x.png in Resources */,
+				1F680AEB92574C3F944171EF /* icon-40.png in Resources */,
+				9ED4BFC0AD834F8B8001FB3A /* icon-40@2x.png in Resources */,
+				CAE3B82F6D4A436B8A6DDFB8 /* icon-40@3x.png in Resources */,
+				518387ACC07A4232839E8824 /* icon-50.png in Resources */,
+				922EF9C6D97B42DDAEC7CF19 /* icon-50@2x.png in Resources */,
+				872C181FCFF34566A5A17C13 /* icon-50@3x.png in Resources */,
+				C1CD67A52C804E548720F62C /* icon-57.png in Resources */,
+				71F5CDB9956B42A191C20BD1 /* icon-57@2x.png in Resources */,
+				FE25D182849149F89B6FE690 /* icon-57@3x.png in Resources */,
+				08DEB1EE14FC4CAFAB21F685 /* icon-60.png in Resources */,
+				B65EB7EE9A574CCE8E811FE1 /* icon-60@2x.png in Resources */,
+				C290BE2A59C84F21A72BB176 /* icon-60@3x.png in Resources */,
+				2743CAAF93B44565BCBB5DB5 /* icon-72.png in Resources */,
+				A7D729751E174F31B9A3CB83 /* icon-72@2x.png in Resources */,
+				7E51DB035F5A4CB79DE8F9E3 /* icon-72@3x.png in Resources */,
+				9B68721A55FF4B729608B553 /* icon-76.png in Resources */,
+				734C787F408540BEA4E3B5C9 /* icon-76@2x.png in Resources */,
+				2CD21C615C554EC89783B46A /* icon-76@3x.png in Resources */,
+				0B0B8FF89E4742B0ADA03FAB /* icon-83.5@2x.png in Resources */,
+				4373AC56F09E44748B01D905 /* icon-Small.png in Resources */,
+				4CC65BD0CCB6457CBA38D889 /* icon-Small@2x.png in Resources */,
+				780FDB13DA7E4D66940DC517 /* icon-Small@3x.png in Resources */,
+				5E41E89A73524CD9BD53645E /* icon.png in Resources */,
+				1610D4574D624BD7BC59A53E /* icon@2x.png in Resources */,
+				BEE1D827C9874517893EA12A /* kinvey-logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54BDC19DEB90CDBC3B6D851B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgressSDE/Pods-ProgressSDE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5AB4E92EBAC20489CBBC9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgressSDE/Pods-ProgressSDE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		860EFE4CE22528A1457D285B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PostBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-post-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-link\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		858B83F218CA22B800AB12DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		858B833A18CA111C00AB12DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858B833B18CA111C00AB12DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		858B835818CA111C00AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		858B835918CA111C00AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+		858B843118CA22B800AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-push-notifications/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressSDE/ProgressSDE-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ProgressSDE/ProgressSDE-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ProgressSDE;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		858B843218CA22B800AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5W7CYNR7UE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-push-notifications/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-telerik-ui/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressSDE/ProgressSDE-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/ProgressSDE/ProgressSDE-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ProgressSDE;
+				VALID_ARCHS = "armv7 arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		858B832918CA111C00AB12DE /* Build configuration list for PBXProject "ProgressSDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B835818CA111C00AB12DE /* Debug */,
+				858B835918CA111C00AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "ProgressSDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B843118CA22B800AB12DE /* Debug */,
+				858B843218CA22B800AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858B832618CA111C00AB12DE /* Project object */;
+}

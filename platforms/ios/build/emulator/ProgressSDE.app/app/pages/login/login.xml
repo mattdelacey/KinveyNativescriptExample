@@ -1,0 +1,35 @@
+
+<Page class="page"
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  xmlns:statusbar="nativescript-statusbar"
+  navigatedTo="navigateTo">
+  <Page.actionBar>
+    <action-bar title="Login">
+      <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
+      <action-bar.actionItems>
+        <ios>
+          <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
+        </ios>
+      </action-bar.actionItems>
+    </action-bar>
+
+  </Page.actionBar>
+  <drawer:rad-side-drawer id="drawer">
+    <drawer:rad-side-drawer.mainContent>
+    <StackLayout class="form" orientation="vertical" loaded="navigateTo">
+        <Image src="res://logo" stretch="none" horizontalAlignment="center" />
+        <TextField id="email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" class="input input-border" />
+        <TextField class="input input-border" id="pw" hint="Password" secure="true" />
+        <Button class="btn btn-outline" text="Sign in" tap="signIn"/>
+        <Button class="btn btn-outline" text="Sign in w/ MIC" tap="signInMIC"/>
+        <Button class="btn btn-outline" text="Logout" tap="logout"/>
+        <Button class="btn btn-outline" text="Sign up for Progress" tap="register"/>
+    </StackLayout>
+    </drawer:rad-side-drawer.mainContent>
+    <drawer:rad-side-drawer.drawerContent>
+      <widgets:drawer-content />
+    </drawer:rad-side-drawer.drawerContent>
+  </drawer:rad-side-drawer>
+</Page>

@@ -1,0 +1,123 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-statusbar@^3.0.1",
+        "scope": null,
+        "escapedName": "nativescript-statusbar",
+        "name": "nativescript-statusbar",
+        "rawSpec": "^3.0.1",
+        "spec": ">=3.0.1 <4.0.0",
+        "type": "range"
+      },
+      "/Users/delacey/nativescript/Progress SDE"
+    ]
+  ],
+  "_from": "nativescript-statusbar@>=3.0.1 <4.0.0",
+  "_id": "nativescript-statusbar@3.0.1",
+  "_inCache": true,
+  "_location": "/nativescript-statusbar",
+  "_nodeVersion": "6.10.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-statusbar-3.0.1.tgz_1495747021083_0.6846992287319154"
+  },
+  "_npmUser": {
+    "name": "burkeholland",
+    "email": "burkeholland@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-statusbar@^3.0.1",
+    "scope": null,
+    "escapedName": "nativescript-statusbar",
+    "name": "nativescript-statusbar",
+    "rawSpec": "^3.0.1",
+    "spec": ">=3.0.1 <4.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-statusbar/-/nativescript-statusbar-3.0.1.tgz",
+  "_shasum": "b9686b9799a0d2ce6f73bc7760cd542ca6062d12",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-statusbar@^3.0.1",
+  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "author": {
+    "name": "Burke Holland",
+    "email": "burkeholland@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/burkeholland/nativescript-statusbar/issues"
+  },
+  "contributors": [
+    {
+      "name": "Burke Holland",
+      "email": "burkeholland@gmail.com",
+      "url": "https://github.com/burkeholland"
+    },
+    {
+      "name": "Brad Martin",
+      "email": "bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    }
+  ],
+  "dependencies": {},
+  "description": "Provides API for setting the status bar style on iOS",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-exec": "^0.4.6",
+    "grunt-mkdir": "^0.1.2",
+    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1",
+    "tns-platform-declarations": "^3.0.0 || ^3.0.0-rc.1",
+    "typescript": "^2.2.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "b9686b9799a0d2ce6f73bc7760cd542ca6062d12",
+    "tarball": "https://registry.npmjs.org/nativescript-statusbar/-/nativescript-statusbar-3.0.1.tgz"
+  },
+  "homepage": "https://github.com/burkeholland/nativescript-statusbar#readme",
+  "keywords": [
+    "nativescript",
+    "native",
+    "typescript",
+    "ios",
+    "statusbar",
+    "status bar"
+  ],
+  "license": "MIT",
+  "main": "statusbar.js",
+  "maintainers": [
+    {
+      "name": "bradmartin",
+      "email": "bradmartin0905@gmail.com"
+    },
+    {
+      "name": "burkeholland",
+      "email": "burkeholland@gmail.com"
+    }
+  ],
+  "name": "nativescript-statusbar",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burkeholland/nativescript-statusbar.git"
+  },
+  "scripts": {},
+  "version": "3.0.1"
+}
