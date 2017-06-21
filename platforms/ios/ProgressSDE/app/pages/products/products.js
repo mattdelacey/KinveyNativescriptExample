@@ -33,6 +33,7 @@ ProductsPage.prototype.contentLoaded = function(args) {
 	});
 };
 
+
 function onPageLoaded(args) {
     console.log('product page loaded');
 };

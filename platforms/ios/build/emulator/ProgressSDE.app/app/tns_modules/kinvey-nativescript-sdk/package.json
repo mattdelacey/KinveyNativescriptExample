@@ -2,15 +2,15 @@
   "_args": [
     [
       {
-        "raw": "kinvey-nativescript-sdk@file:///Users/delacey/nativescript/SDK",
+        "raw": "../SDK",
         "scope": null,
-        "escapedName": "kinvey-nativescript-sdk",
-        "name": "kinvey-nativescript-sdk",
-        "rawSpec": "file:///Users/delacey/nativescript/SDK",
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "../SDK",
         "spec": "/Users/delacey/nativescript/SDK",
         "type": "directory"
       },
-      "/Users/delacey/nativescript/Progress SDE"
+      "/Users/delacey/nativescript/my-project-name"
     ]
   ],
   "_from": "../SDK",
@@ -19,22 +19,23 @@
   "_location": "/kinvey-nativescript-sdk",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "kinvey-nativescript-sdk@file:///Users/delacey/nativescript/SDK",
+    "raw": "../SDK",
     "scope": null,
-    "escapedName": "kinvey-nativescript-sdk",
-    "name": "kinvey-nativescript-sdk",
-    "rawSpec": "file:///Users/delacey/nativescript/SDK",
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "../SDK",
     "spec": "/Users/delacey/nativescript/SDK",
     "type": "directory"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "file:../SDK",
   "_shasum": "1c6339afbcf714b2d1480f8022ed27d0e2880209",
   "_shrinkwrap": null,
-  "_spec": "kinvey-nativescript-sdk@file:///Users/delacey/nativescript/SDK",
-  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "_spec": "../SDK",
+  "_where": "/Users/delacey/nativescript/my-project-name",
   "author": {
     "name": "Kinvey"
   },

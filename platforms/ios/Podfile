@@ -2,7 +2,8 @@ use_frameworks!
 
 target "ProgressSDE" do
 # Begin Podfile - /Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk/platforms/ios/Podfile 
- pod 'SAMKeychain', '~> 1.5.2'
+ platform :ios, '9.0'
+pod 'SAMKeychain', '~> 1.5.2'
  
  # End Podfile 
 

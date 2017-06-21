@@ -4,13 +4,13 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.myprojectname",
+    "id": "com.kinvey.native",
     "tns-ios": {
       "version": "3.0.1"
     }
   },
   "dependencies": {
-    "kinvey-nativescript-sdk": "file:///Users/delacey/nativescript/SDK",
+    "kinvey-nativescript-sdk": "^3.6.0-ns.3",
     "nativescript-drop-down": "^3.0.2",
     "nativescript-materialdropdownlist": "^1.0.15",
     "nativescript-push-notifications": "^0.1.3",

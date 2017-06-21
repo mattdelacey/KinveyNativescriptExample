@@ -9,7 +9,6 @@ ignoring nonexistent directory "/Users/delacey/nativescript/Progress"
 ignoring nonexistent directory "SDE/platforms/ios/build/device/include"
 ignoring nonexistent directory "/Users/delacey/nativescript/Progress"
 ignoring nonexistent directory "SDE/platforms/ios/../../node_modules/nativescript-sqlite/platforms/ios"
-ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain"
 ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain/SAMKeychain.framework/Headers"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/local/include"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/Library/Frameworks"
@@ -18,6 +17,7 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal/TKLiveSync/include
  /Users/delacey/nativescript/Progress SDE/platforms/ios/build/device (framework directory)
+ /Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/../../node_modules/nativescript-push-notifications/platforms/ios (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/../../node_modules/nativescript-telerik-ui/platforms/ios (framework directory)
@@ -38,7 +38,6 @@ ignoring nonexistent directory "/Users/delacey/nativescript/Progress"
 ignoring nonexistent directory "SDE/platforms/ios/build/device/include"
 ignoring nonexistent directory "/Users/delacey/nativescript/Progress"
 ignoring nonexistent directory "SDE/platforms/ios/../../node_modules/nativescript-sqlite/platforms/ios"
-ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain"
 ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain/SAMKeychain.framework/Headers"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/local/include"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/Library/Frameworks"
@@ -47,6 +46,7 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal/TKLiveSync/include
  /Users/delacey/nativescript/Progress SDE/platforms/ios/build/device (framework directory)
+ /Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-ftknpnxkobbcgncvjzchrvwwpvsk/Build/Products/Debug-iphoneos/SAMKeychain (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/internal (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/../../node_modules/nativescript-push-notifications/platforms/ios (framework directory)
  /Users/delacey/nativescript/Progress SDE/platforms/ios/../../node_modules/nativescript-telerik-ui/platforms/ios (framework directory)

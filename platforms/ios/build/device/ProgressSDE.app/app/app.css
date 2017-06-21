@@ -21,20 +21,32 @@ label {
   color: #e4ba4e;
 }
 
+.footer {
+    background-color: #8C489F;
+    color: whitesmoke;
+    border-radius: 3;
+}
+
+.icon {
+   font-family: 'icomoon';
+   font-size: 15;
+   color: #ff0000;
+}
+
 Page {
-    background-color: white;
+    /*background-color: white;*/
     font-size: 17;
 }
 TextField {
     margin: 10;
     padding: 10;
 }
-Image {
+/*Image {
     margin-top: 20;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 80;
-}
+}*/
 Button {
     background: #454545;
     margin: 10;

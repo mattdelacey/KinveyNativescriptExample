@@ -18,44 +18,44 @@ var viewModel = new Observable();
 SearchPage.prototype.contentLoaded = function(args) {
     console.log('search loaded');
 
-    
+
     var array = new observableArray.ObservableArray();
 
-   
 
-    /*var dataStore = Kinvey.DataStore.collection('products', Kinvey.DataStoreType.Network);
+
+    var dataStore = Kinvey.DataStore.collection('products', Kinvey.DataStoreType.Network);
     var stream = dataStore.find();
     stream.subscribe(function onNext(entities) {
-        console.log(JSON.stringify(entities));*/
+    //console.log(JSON.stringify(entities));
 
-        var page = args.object;
+    var page = args.object;
 
-        /*for (i=0; i < entities.length; i++ ) {
-          array.push( entities[i].title );
-          console.log( entities[i].title);
-        }*/
+    for (i=0; i < entities.length; i++ ) {
+      array.push( entities[i].title );
+      console.log( entities[i].title);
+    }
 
-        console.log( 'array length = ' + array.length);
-        var page = args.object;
-        array.push("WE MAKE IT EASY TO ACCESS YOUR EXISTING DATA");
-        array.push("PROTECT YOUR USERS AND SECURE YOUR DATA");
+    console.log('array length = ' + array.length);
+    var page = args.object;
+    array.push("WE MAKE IT EASY TO ACCESS YOUR EXISTING DATA");
+    array.push("PROTECT YOUR USERS AND SECURE YOUR DATA");
 
-        //array.push(entities);
-        viewModel.set("items", array);
-        viewModel.set("selectedIndex", 1);
-        page.bindingContext = viewModel;
-        
+    //array.push(entities);
+    viewModel.set("items", array);
+    viewModel.set("selectedIndex", 1);
+    page.bindingContext = viewModel;
 
-    /*}, function onError(error) {
+
+    }, function onError(error) {
         console.log(error);
     }, function onComplete() {
         console.log('demobranding data complete');
         console.log( 'on complete array length = ' + array.length);
-    });*/
+    });
 
 };
 
-function onPageLoaded(args) {
+SearchPage.prototype.onPageLoaded = function(args) {
     console.log('search page loaded');
 
 };
@@ -73,25 +73,25 @@ SearchPage.prototype.dropDownSelectedIndexChanged = function(args) {
     // find  entity matching title
     //
     var dataStore = Kinvey.DataStore.collection('products', Kinvey.DataStoreType.Network);
-    console.log( args );
+    console.log(args);
 
     var output = '';
-for (var property in args) {
-  output += property + ': ' + args[property]+'; ';
-}
-alert(output);
+    for (var property in args) {
+        output += property + ': ' + args[property] + '; ';
+    }
+    alert(output);
 
 
     var query = new Kinvey.Query();
-    query.equalTo('title', 'blah');
+    query.equalTo('title', "CHOOSE YOUR OWN CLOUD: PUBLIC OR PRIVATE");
     var stream = dataStore.find(query);
     stream.subscribe(function onNext(entities) {
-      console.log(entities);
+        console.log(entities);
     }, function onError(error) {
-      console.log(error);
+        console.log(error);
     }, function onComplete() {
-      console.log('complete query');
-});
+        console.log('complete query');
+    });
 
 
     viewModel.set("selectedIndex", args.newIndex);
@@ -105,4 +105,4 @@ exports.navigateTo = function(args) {
 };
 
 module.exports = new SearchPage();
-exports.onPageLoad = onPageLoaded;
+//exports.onPageLoad = onPageLoaded;

@@ -14,33 +14,33 @@ var Page;
 var email;
 
 exports.pageLoaded = function(args) {
-	console.log('loaded');
+    console.log('loaded');
     Page = args.object;
 };
 
 exports.navigateTo = function(args) {
-	console.log('HERE');
+    console.log('HERE');
 };
 
 exports.register = function() {
-	console.log('register');
+    console.log('register');
     email = page.getViewById("email");
     pw = page.getViewById("pw");
     console.log(email.text);
 
     Kinvey.User.login(email.text, pw.text)
-    	.then(function(user) {
-    		console.dump(user);
-    		console.log('logged in');
-    	})
-    	.catch(function(error) {
-    		console.log(error.message);
-    	});
+        .then(function(user) {
+            console.dump(user);
+            console.log('logged in');
+        })
+        .catch(function(error) {
+            console.log(error.message);
+        });
 };
 
 
 LoginPage.prototype.signIn = function(args) {
-	var sender = args.object;
+    var sender = args.object;
     var parent = sender.parent;
 
     console.log('signIn');
@@ -50,39 +50,39 @@ LoginPage.prototype.signIn = function(args) {
 
     // Kinvey.User.login(email.text, pw.text)
     Kinvey.User.logout()
-    	.then(function() {
-    		//return Kinvey.User.loginWithMIC('http://localhost:8100');
-    		return Kinvey.User.login(email.text, pw.text);
-    		
-    	})
-    	.then(function(user) {
-    		console.log(user);
-    		topmost().navigate("pages/home/home");
-    		console.log('logged in');
-    	})
-    	.catch(function(error) {
-    		console.log(error.message);
-    	});
+        .then(function() {
+            //return Kinvey.User.loginWithMIC('http://localhost:8100');
+            return Kinvey.User.login(email.text, pw.text);
+
+        })
+        .then(function(user) {
+            console.log(user);
+            topmost().navigate("pages/home/home");
+            console.log('logged in');
+        })
+        .catch(function(error) {
+            console.log(error.message);
+        });
 };
 
 LoginPage.prototype.logout = function(args) {
-	  Kinvey.User.logout()
-    	.then(function() {
-    		console.log('logging out');
-    		
-    	})
-    	.then(function(user) {
-    		console.log(user);
-    		
-    		console.log('logged out');
-    	})
-    	.catch(function(error) {
-    		console.log(error.message);
-    	});
+    Kinvey.User.logout()
+        .then(function() {
+            console.log('logging out');
+
+        })
+        .then(function(user) {
+            console.log(user);
+
+            console.log('logged out');
+        })
+        .catch(function(error) {
+            console.log(error.message);
+        });
 }
 
 LoginPage.prototype.signInMIC = function(args) {
-	var sender = args.object;
+    var sender = args.object;
     var parent = sender.parent;
 
     console.log('signIn');
@@ -90,21 +90,39 @@ LoginPage.prototype.signInMIC = function(args) {
     pw = view.getViewById(parent, "pw");
     console.log(email.text);
 
-    
+
     Kinvey.User.logout()
-    	.then(function() {
-    		return Kinvey.User.loginWithMIC('http://localhost:8100');
-    		//return Kinvey.User.login(email.text, pw.text);
-    		
-    	})
-    	.then(function(user) {
-    		console.log(user);
-    		topmost().navigate("pages/home/home");
-    		console.log('logged in');
-    	})
-    	.catch(function(error) {
-    		console.log(error.message);
-    	});
-};
+        .then(function() {
+            console.log('logging out MIC user');
+
+        })
+        .then(function(user) {
+            Kinvey.User.loginWithMIC('http://localhost:8100',
+                    Kinvey.AuthorizationGrant.AuthorizationLoginPage, { version: "v2" })
+                .then(function(user) {
+                    console.log(user);
+                    topmost().navigate("pages/home/home");
+                    console.log('logged in');
+                })
+                .catch(function(error) {
+                    console.log(error.message);
+                });
+        })
+        .catch(function(error) {
+            console.log(error.message);
+        });
+    /*.then(function() {
+            return Kinvey.User.loginWithMIC('http://localhost:8100',
+                    Kinvey.AuthorizationGrant.AuthorizationCodeAPI, { version: "v2" })
+                .then(function(user) {
+                    console.log(user);
+                    topmost().navigate("pages/home/home");
+                    console.log('logged in');
+                })
+                .catch(function(error) {
+                    console.log(error.message);
+                });
+        }*/
+}
 
 module.exports = new LoginPage();

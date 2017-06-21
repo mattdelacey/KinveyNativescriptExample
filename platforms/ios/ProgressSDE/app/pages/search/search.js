@@ -23,17 +23,17 @@ SearchPage.prototype.contentLoaded = function(args) {
 
 
 
-    /*var dataStore = Kinvey.DataStore.collection('products', Kinvey.DataStoreType.Network);
+    var dataStore = Kinvey.DataStore.collection('products', Kinvey.DataStoreType.Network);
     var stream = dataStore.find();
-    stream.subscribe(function onNext(entities) {*/
+    stream.subscribe(function onNext(entities) {
     //console.log(JSON.stringify(entities));
 
     var page = args.object;
 
-    /*for (i=0; i < entities.length; i++ ) {
-      //array.push( entities[i].title );
+    for (i=0; i < entities.length; i++ ) {
+      array.push( entities[i].title );
       console.log( entities[i].title);
-    }*/
+    }
 
     console.log('array length = ' + array.length);
     var page = args.object;
@@ -46,16 +46,16 @@ SearchPage.prototype.contentLoaded = function(args) {
     page.bindingContext = viewModel;
 
 
-    /*}, function onError(error) {
+    }, function onError(error) {
         console.log(error);
     }, function onComplete() {
         console.log('demobranding data complete');
         console.log( 'on complete array length = ' + array.length);
-    });*/
+    });
 
 };
 
-function onPageLoaded(args) {
+SearchPage.prototype.onPageLoaded = function(args) {
     console.log('search page loaded');
 
 };
@@ -105,4 +105,4 @@ exports.navigateTo = function(args) {
 };
 
 module.exports = new SearchPage();
-exports.onPageLoad = onPageLoaded;
+//exports.onPageLoad = onPageLoaded;

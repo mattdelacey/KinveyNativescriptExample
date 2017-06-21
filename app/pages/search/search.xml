@@ -1,4 +1,4 @@
-<page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:drawer="nativescript-telerik-ui/sidedrawer" xmlns:widgets="shared/widgets" xmlns:lv="nativescript-telerik-ui/listview" xmlns:statusbar="nativescript-statusbar" xmlns:dd="nativescript-drop-down" loaded="onPageLoad">
+<page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:drawer="nativescript-telerik-ui/sidedrawer" xmlns:widgets="shared/widgets" xmlns:lv="nativescript-telerik-ui/listview" xmlns:statusbar="nativescript-statusbar" xmlns:dd="nativescript-drop-down" loaded="onPageLoaded">
     <statusbar:StatusBar ios:barStyle="light" />
     <page.actionBar>
         <action-bar title="Search">

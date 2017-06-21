@@ -42,6 +42,6 @@
       <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>CFBundleIdentifier</key>
-    <string>org.nativescript.myprojectname</string>
+    <string>com.kinvey.native</string>
   </dict>
 </plist>

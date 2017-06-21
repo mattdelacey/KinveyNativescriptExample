@@ -7,7 +7,7 @@
 		<key>ApplicationPath</key>
 		<string>Applications/ProgressSDE.app</string>
 		<key>CFBundleIdentifier</key>
-		<string>org.nativescript.myprojectname</string>
+		<string>com.kinvey.native</string>
 		<key>CFBundleShortVersionString</key>
 		<string>1.0</string>
 		<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<key>ArchiveVersion</key>
 	<integer>2</integer>
 	<key>CreationDate</key>
-	<date>2017-06-05T21:26:22Z</date>
+	<date>2017-06-21T13:02:49Z</date>
 	<key>Name</key>
 	<string>ProgressSDE</string>
 	<key>SchemeName</key>
