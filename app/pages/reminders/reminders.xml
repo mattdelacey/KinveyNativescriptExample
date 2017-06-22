@@ -7,7 +7,7 @@
   loaded="pageLoaded">
   <statusbar:StatusBar ios:barStyle="light" />
     <page.actionBar>
-        <action-bar title="Offline">
+        <action-bar title="Doctors">
             <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
             <action-bar.actionItems>
                 <ios>
@@ -23,17 +23,24 @@
         <ListView id="listview" items="{{ myItems }}" loaded="contentLoaded" >
                 <ListView.itemTemplate>
                     <GridLayout columns="75,*" rows="*">
-                        <Label text="&#xe971;" class="icon" row="0" col="0" style="text-align: center; vertical-align: center; color: #fff; font-size: 20; background-color: #00853e;"/>
-                    <StackLayout orientation="vertical" textAlignment="right" style.backgroundColor="lightgray" row="0" col="1">
+                       <!-- <Label text="&#xe971;" class="icon" row="0" col="0" style="text-align: center; vertical-align: center; color: #fff; font-size: 20; background-color: #00853e;"/>-->
+                       <Image src="{{icon}}" stretch="aspectFill" height="30" width="30" />
+                    <StackLayout orientation="vertical" textAlignment="left" style.backgroundColor="lightgray" row="0" col="1">
                       
                 
-                        <Label text="{{ accountname }}" textAlignment="right" fontAttributes="Bold" />
-                        <Label text="{{ accountcompany }}" textAlignment="right" class="h3"/>
+                        <Label text="{{ remindname }}" textAlignment="right" fontAttributes="Bold" />
+                        <Label text="{{ notes }}" textWrap="true" textAlignment="right" class="h3"/>
                     </StackLayout>
+
                     </GridLayout>
+
                 </ListView.itemTemplate>
-                <Button class="btn btn-outline" text="Sync Me" tap="syncMe"/>
+                
             </ListView>   
+            <!--<GridLayout columns="*" rows="*">
+           <StackLayout orientation="vertical" textAlignment="left" style.backgroundColor="lightgray" row="1" col="1">
+                      <Button class="btn btn-outline" text="Sync Me" tap="syncMe"/>
+                      </StackLayout></GridLayout>-->
 
    
         </drawer:rad-side-drawer.mainContent>

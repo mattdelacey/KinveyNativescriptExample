@@ -73,6 +73,14 @@ LoginPage.prototype.logout = function(args) {
         })
         .then(function(user) {
             console.log(user);
+            var dialogs = require("ui/dialogs");
+dialogs.alert({
+    title: "Logout",
+    message: "The user has successfully logged out.",
+    okButtonText: "ok"
+}).then(function () {
+    console.log("Dialog closed!");
+});
 
             console.log('logged out');
         })

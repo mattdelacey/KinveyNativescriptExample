@@ -1,7 +1,7 @@
 <page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:drawer="nativescript-telerik-ui/sidedrawer" xmlns:widgets="shared/widgets" xmlns:lv="nativescript-telerik-ui/listview" xmlns:statusbar="nativescript-statusbar" loaded="onPageLoad">
     <statusbar:StatusBar ios:barStyle="light" />
     <page.actionBar>
-        <action-bar title="Accounts">
+        <action-bar title="Doctors">
             <navigation-button icon="res://ic_menu" tap="toggleDrawer" ios:visibility="collapsed" />
             <action-bar.actionItems>
                 <ios>

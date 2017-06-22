@@ -3,12 +3,13 @@
   	<label text="Login" tap="navigate" class="{{ selectedPage == 'login' ? 'selected' : '' }}" />
     <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
     <label text="Products" tap="navigate" class="{{ selectedPage == 'products' ? 'selected' : '' }}" />
-     <label text="Accounts" tap="navigate" class="{{ selectedPage == 'accounts' ? 'selected' : '' }}" />
+     <label text="Doctors" tap="navigate" class="{{ selectedPage == 'accounts' ? 'selected' : '' }}" />
     <!--<label text="Settings" tap="navigate" class="{{ selectedPage == 'settings' ? 'selected' : '' }}" />-->
     <!--<label text="Search" tap="navigate" class="{{ selectedPage == 'search' ? 'selected' : '' }}" />-->
    
    <!-- <label text="Tasks" tap="navigate" class="{{ selectedPage == 'tasks' ? 'selected' : '' }}" />-->
-    <label text="Offline" tap="navigate" class="{{ selectedPage == 'offline' ? 'selected' : '' }}" />
+    <label text="Reminders" tap="navigate" class="{{ selectedPage == 'offline' ? 'selected' : '' }}" />
     <!--<label text="Map" tap="navigate" class="{{ selectedPage == 'map' ? 'selected' : '' }}" />-->
+
   </stack-layout>
 </grid-layout>
