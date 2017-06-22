@@ -39,6 +39,10 @@ OfflinePage.prototype.contentLoaded = function(args) {
 
 };
 
+OfflinePage.prototype.syncMe = function(args) {
+    console.log('sync me');
+};
+
 OfflinePage.prototype.addMe = function(args) {
     console.log('add offline items');
 

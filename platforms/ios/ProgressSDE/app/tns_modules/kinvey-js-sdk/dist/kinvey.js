@@ -7,6 +7,10 @@ exports.Kinvey = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _url = require('url');
+
+var _url2 = _interopRequireDefault(_url);
+
 var _errors = require('./errors');
 
 var _utils = require('./utils');
@@ -74,7 +78,12 @@ var Kinvey = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.GET,
         authType: _request.AuthType.All,
-        url: this.client.apiHostname + '/appdata/' + client.appKey
+        url: _url2.default.format({
+          protocol: this.client.apiProtocol,
+          host: this.client.apiHost,
+          pathname: '/appdata/' + this.client.appKey
+        }),
+        client: client
       });
 
       return request.execute().then(function (response) {
@@ -90,9 +99,6 @@ var Kinvey = function () {
     key: 'appVersion',
     get: function get() {
       return this.client.appVersion;
-    },
-    set: function set(appVersion) {
-      this.client.appVersion = appVersion;
     }
   }]);
 

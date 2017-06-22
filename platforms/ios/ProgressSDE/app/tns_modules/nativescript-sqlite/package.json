@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "nativescript-sqlite",
+        "raw": "nativescript-sqlite@^1.1.7",
         "scope": null,
         "escapedName": "nativescript-sqlite",
         "name": "nativescript-sqlite",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^1.1.7",
+        "spec": ">=1.1.7 <2.0.0",
+        "type": "range"
       },
-      "/Users/delacey/nativescript/my-project-name"
+      "/Users/delacey/nativescript/Progress SDE"
     ]
   ],
-  "_from": "nativescript-sqlite@latest",
+  "_from": "nativescript-sqlite@>=1.1.7 <2.0.0",
   "_id": "nativescript-sqlite@1.1.7",
   "_inCache": true,
   "_location": "/nativescript-sqlite",
@@ -29,23 +29,22 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "nativescript-sqlite",
+    "raw": "nativescript-sqlite@^1.1.7",
     "scope": null,
     "escapedName": "nativescript-sqlite",
     "name": "nativescript-sqlite",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^1.1.7",
+    "spec": ">=1.1.7 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-sqlite/-/nativescript-sqlite-1.1.7.tgz",
   "_shasum": "08b729e141ec2818a04eef3548133d8d666e17c4",
   "_shrinkwrap": null,
-  "_spec": "nativescript-sqlite",
-  "_where": "/Users/delacey/nativescript/my-project-name",
+  "_spec": "nativescript-sqlite@^1.1.7",
+  "_where": "/Users/delacey/nativescript/Progress SDE",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"

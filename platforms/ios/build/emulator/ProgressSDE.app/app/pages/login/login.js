@@ -48,10 +48,10 @@ LoginPage.prototype.signIn = function(args) {
     pw = view.getViewById(parent, "pw");
     console.log(email.text);
 
-    // Kinvey.User.login(email.text, pw.text)
+    
     Kinvey.User.logout()
         .then(function() {
-            //return Kinvey.User.loginWithMIC('http://localhost:8100');
+            
             return Kinvey.User.login(email.text, pw.text);
 
         })

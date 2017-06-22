@@ -14,6 +14,10 @@ var _isArray = require('lodash/isArray');
 
 var _isArray2 = _interopRequireDefault(_isArray);
 
+var _url = require('url');
+
+var _url2 = _interopRequireDefault(_url);
+
 var _request = require('../../request');
 
 var _errors = require('../../errors');
@@ -69,7 +73,11 @@ var NetworkStore = function () {
         var config = {
           method: _request.RequestMethod.GET,
           authType: _request.AuthType.Default,
-          url: '' + _this.client.apiHostname + _this.pathname,
+          url: _url2.default.format({
+            protocol: _this.client.apiProtocol,
+            host: _this.client.apiHost,
+            pathname: _this.pathname
+          }),
           properties: options.properties,
           query: query,
           timeout: options.timeout,
@@ -110,7 +118,11 @@ var NetworkStore = function () {
         var config = {
           method: _request.RequestMethod.GET,
           authType: _request.AuthType.Default,
-          url: '' + _this2.client.apiHostname + _this2.pathname + '/' + id,
+          url: _url2.default.format({
+            protocol: _this2.client.apiProtocol,
+            host: _this2.client.apiHost,
+            pathname: _this2.pathname + '/' + id
+          }),
           properties: options.properties,
           timeout: options.timeout,
           client: _this2.client
@@ -149,7 +161,11 @@ var NetworkStore = function () {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.POST,
           authType: _request.AuthType.Default,
-          url: '' + _this3.client.apiHostname + _this3.pathname + '/_group',
+          url: _url2.default.format({
+            protocol: _this3.client.apiProtocol,
+            host: _this3.client.apiHost,
+            pathname: _this3.pathname + '/_group'
+          }),
           properties: options.properties,
           aggregation: aggregation,
           timeout: options.timeout,
@@ -184,7 +200,11 @@ var NetworkStore = function () {
           var request = new _request.KinveyRequest({
             method: _request.RequestMethod.GET,
             authType: _request.AuthType.Default,
-            url: '' + _this4.client.apiHostname + _this4.pathname + '/_count',
+            url: _url2.default.format({
+              protocol: _this4.client.apiProtocol,
+              host: _this4.client.apiHost,
+              pathname: _this4.pathname + '/_count'
+            }),
             properties: options.properties,
             query: query,
             timeout: options.timeout,
@@ -227,7 +247,11 @@ var NetworkStore = function () {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.POST,
           authType: _request.AuthType.Default,
-          url: '' + _this5.client.apiHostname + _this5.pathname,
+          url: _url2.default.format({
+            protocol: _this5.client.apiProtocol,
+            host: _this5.client.apiHost,
+            pathname: _this5.pathname
+          }),
           properties: options.properties,
           data: entity,
           timeout: options.timeout,
@@ -270,7 +294,11 @@ var NetworkStore = function () {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.PUT,
           authType: _request.AuthType.Default,
-          url: '' + _this6.client.apiHostname + _this6.pathname + '/' + entity._id,
+          url: _url2.default.format({
+            protocol: _this6.client.apiProtocol,
+            host: _this6.client.apiHost,
+            pathname: _this6.pathname + '/' + entity._id
+          }),
           properties: options.properties,
           data: entity,
           timeout: options.timeout,
@@ -314,7 +342,11 @@ var NetworkStore = function () {
           var request = new _request.KinveyRequest({
             method: _request.RequestMethod.DELETE,
             authType: _request.AuthType.Default,
-            url: '' + _this7.client.apiHostname + _this7.pathname,
+            url: _url2.default.format({
+              protocol: _this7.client.apiProtocol,
+              host: _this7.client.apiHost,
+              pathname: _this7.pathname
+            }),
             properties: options.properties,
             query: query,
             timeout: options.timeout,
@@ -353,7 +385,11 @@ var NetworkStore = function () {
           var request = new _request.KinveyRequest({
             method: _request.RequestMethod.DELETE,
             authType: _request.AuthType.Default,
-            url: '' + _this8.client.apiHostname + _this8.pathname + '/' + id,
+            url: _url2.default.format({
+              protocol: _this8.client.apiProtocol,
+              host: _this8.client.apiHost,
+              pathname: _this8.pathname + '/' + id
+            }),
             properties: options.properties,
             timeout: options.timeout
           });

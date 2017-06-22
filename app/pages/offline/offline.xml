@@ -13,6 +13,7 @@
                 <ios>
                     <action-item icon="res://ic_menu" ios.position="left" tap="toggleDrawer" />
                     <action-item ios.systemIcon="4" ios.position="right" tap="addMe" />
+                    <!--<action-item ios.systemIcon="5" ios.position="center" tap="syncMe" />-->
                 </ios>
             </action-bar.actionItems>
         </action-bar>
@@ -31,7 +32,9 @@
                     </StackLayout>
                     </GridLayout>
                 </ListView.itemTemplate>
+                <Button class="btn btn-outline" text="Sync Me" tap="syncMe"/>
             </ListView>   
+
    
         </drawer:rad-side-drawer.mainContent>
         <drawer:rad-side-drawer.drawerContent>

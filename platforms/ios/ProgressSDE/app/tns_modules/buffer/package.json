@@ -10,7 +10,7 @@
         "spec": "5.0.6",
         "type": "version"
       },
-      "/Users/delacey/nativescript/CoreSDK"
+      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk"
     ]
   ],
   "_from": "buffer@5.0.6",
@@ -44,7 +44,7 @@
   "_shasum": "2ea669f7eec0b6eda05b08f8b5ff661b28573588",
   "_shrinkwrap": null,
   "_spec": "buffer@5.0.6",
-  "_where": "/Users/delacey/nativescript/CoreSDK",
+  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",

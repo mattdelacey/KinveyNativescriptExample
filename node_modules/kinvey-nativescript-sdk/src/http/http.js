@@ -35,14 +35,15 @@ var HttpMiddleware = (function (_super) {
     HttpMiddleware.prototype.handle = function (request) {
         var url = request.url, method = request.method, headers = request.headers, body = request.body, timeout = request.timeout, followRedirect = request.followRedirect;
         headers['X-Kinvey-Device-Information'] = deviceInformation();
-        return http_1.request({
+        var options = {
             method: method,
             headers: headers,
-            url: url,
+            url: encodeURI(url),
             content: body,
             timeout: timeout,
             dontFollowRedirects: followRedirect
-        })
+        };
+        return http_1.request(options)
             .then(function (response) {
             return {
                 response: {

@@ -14,6 +14,11 @@ var AccountsPage = function() {};
 AccountsPage.prototype = new BasePage();
 AccountsPage.prototype.constructor = AccountsPage;
 var array = new observableArray.ObservableArray();
+var observeMe;
+var myItems;
+var observable_array_1 = require("data/observable-array");
+var observable_1 = require("data/observable");
+var tmpobservable;
 
 var viewModel = new observableModule.Observable({
     myItems: new observableArrayModule.ObservableArray([
@@ -27,78 +32,75 @@ var viewModel = new observableModule.Observable({
 AccountsPage.prototype.contentLoaded = function(args) {
     var page = args.object;
 
-
-    var viewModel = new observable.Observable();
+    myItems = new observable_array_1.ObservableArray();
+    /*myItems.push({ accountname: "United States" });
+    myItems.push({ accountname: "Bulgaria" });
+    myItems.push({ accountname: "Germany" });
+    myItems.push({ accountname: "Denmark" });
+    myItems.push({ accountname: "India" });
+    myItems.push({ accountname: "Spain" });
+    myItems.push({ accountname: "Italy" });*/
 
     var dataStore = Kinvey.DataStore.collection('accounts', Kinvey.DataStoreType.Network);
     var stream = dataStore.find();
     stream.subscribe(function onNext(entities) {
-        console.log(JSON.stringify(entities));
-        //var charCode = "\e971";
-        var page = args.object;
+        while(myItems.length > 0) {
+            myItems.pop();
+        }
 
-        array.push(entities);
+        for (i=0; i < entities.length; i++) {
 
-        page.bindingContext = { myItems: array };
-
+            console.log(entities[i]);
+            myItems.push(entities[i]);
+        }
         
+        tmpobservable = new observable_1.Observable();
+        tmpobservable.set("myItems", myItems);
+        page.bindingContext = tmpobservable;
 
-
-        /*setInterval(function() {
-        viewModel.myItems.push({
-            accountname: 'New item'
-        });
-    }, 1000);*/
-
-        //page.refresh();
     }, function onError(error) {
         console.log(error);
     }, function onComplete() {
         console.log('account data fetch complete');
     });
-
-
-
-
 };
 
 AccountsPage.prototype.refreshMe = function(args) {
     console.log('refreshMe');
 
+    //myItems.pop();
+
+
     var page = args.object;
-   
-    var viewModel = new observable.Observable();
 
     var dataStore = Kinvey.DataStore.collection('accounts', Kinvey.DataStoreType.Network);
     var stream = dataStore.find();
     stream.subscribe(function onNext(entities) {
         
-        
         var page = args.object;
         var parent = page.parent;
 
-        array = entities;
-        console.log(array.length);
-        
-        var listview = Frame.topmost().getViewById('listview');
-        console.dir(listview);
-        if ( listview == null ) {
-          console.log('null');
-        } else {
-          console.log('not null');
+        console.log(entities.length);
+
+        while(myItems.length > 0) {
+            myItems.pop();
         }
 
-        page.bindingContext = {myItems: array};
-        listview.refresh();
+        for (i=0; i < entities.length; i++) {
+
+            console.log(entities[i]);
+            myItems.push(entities[i]);
+        }
 
     }, function onError(error) {
         console.log(error);
     }, function onComplete() {
+        
         console.log('account data fetch complete');
     });
 };
 
-function onPageLoaded(args) {
+function onPageLoad(args) {
     console.log('accounts page loaded');
 
 };
@@ -108,4 +110,4 @@ exports.navigateTo = function(args) {
 };
 
 module.exports = new AccountsPage();
-exports.onPageLoad = onPageLoaded;
+exports.onPageLoad = onPageLoad;
