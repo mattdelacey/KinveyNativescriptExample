@@ -10,7 +10,7 @@
         "spec": ">=3.0.2 <4.0.0",
         "type": "range"
       },
-      "/Users/delacey/nativescript/my-project-name"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
   "_from": "nativescript-drop-down@>=3.0.2 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "341d2fadac510280f74678ededb94cafe37b1468",
   "_shrinkwrap": null,
   "_spec": "nativescript-drop-down@^3.0.2",
-  "_where": "/Users/delacey/nativescript/my-project-name",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Peter Staev",
     "email": "peter@tangrasoft.com"

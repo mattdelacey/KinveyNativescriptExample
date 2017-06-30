@@ -20,6 +20,10 @@ var _isString = require('lodash/isString');
 
 var _isString2 = _interopRequireDefault(_isString);
 
+var _url = require('url');
+
+var _url2 = _interopRequireDefault(_url);
+
 var _request = require('../../request');
 
 var _errors = require('../../errors');
@@ -66,7 +70,11 @@ var UserStore = function (_NetworkStore) {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.POST,
           authType: _request.AuthType.Default,
-          url: '' + _this2.client.apiHostname + _this2.pathname + '/_lookup',
+          url: _url2.default.format({
+            protocol: _this2.client.apiProtocol,
+            host: _this2.client.apiHost,
+            pathname: _this2.pathname + '/_lookup'
+          }),
           properties: options.properties,
           body: (0, _utils.isDefined)(query) ? query.toPlainObject().filter : null,
           timeout: options.timeout,
@@ -117,7 +125,11 @@ var UserStore = function (_NetworkStore) {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: this.client.apiHostname + '/rpc/' + this.client.appKey + '/check-username-exists',
+        url: _url2.default.format({
+          protocol: this.client.apiProtocol,
+          host: this.client.apiHost,
+          pathname: '/rpc/' + this.client.appKey + '/check-username-exists'
+        }),
         properties: options.properties,
         data: { username: username },
         timeout: options.timeout,
@@ -149,7 +161,12 @@ var UserStore = function (_NetworkStore) {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.DELETE,
           authType: _request.AuthType.Default,
-          url: (0, _utils.appendQuery)('' + _this3.client.apiHostname + _this3.pathname + '/' + id, options.hard === true ? { hard: true } : undefined),
+          url: _url2.default.format({
+            protocol: _this3.client.apiProtocol,
+            host: _this3.client.apiHost,
+            pathname: _this3.pathname + '/' + id,
+            query: options.hard === true ? { hard: true } : undefined
+          }),
           properties: options.properties,
           timeout: options.timeout
         });

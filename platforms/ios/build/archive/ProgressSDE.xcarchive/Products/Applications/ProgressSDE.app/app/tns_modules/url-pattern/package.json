@@ -10,7 +10,7 @@
         "spec": "1.0.3",
         "type": "version"
       },
-      "/Users/delacey/nativescript/CoreSDK"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk"
     ]
   ],
   "_from": "url-pattern@1.0.3",
@@ -44,7 +44,7 @@
   "_shasum": "0409292471b24f23c50d65a47931793d2b5acfc1",
   "_shrinkwrap": null,
   "_spec": "url-pattern@1.0.3",
-  "_where": "/Users/delacey/nativescript/CoreSDK",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk",
   "author": {
     "name": "Maximilian Krüger",
     "email": "kruemaxi@gmail.com",

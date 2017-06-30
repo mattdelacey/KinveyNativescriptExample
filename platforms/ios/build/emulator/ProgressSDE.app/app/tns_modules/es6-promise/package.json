@@ -10,7 +10,7 @@
         "spec": "4.1.0",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-nativescript-sdk"
     ]
   ],
   "_from": "es6-promise@4.1.0",
@@ -45,7 +45,7 @@
   "_shasum": "dda03ca8f9f89bc597e689842929de7ba8cebdf0",
   "_shrinkwrap": null,
   "_spec": "es6-promise@4.1.0",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-nativescript-sdk",
   "author": {
     "name": "Yehuda Katz, Tom Dale, Stefan Penner and contributors",
     "url": "Conversion to ES6 API by Jake Archibald"

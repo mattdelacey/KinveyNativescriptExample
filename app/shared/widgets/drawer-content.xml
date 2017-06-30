@@ -2,7 +2,7 @@
   <stack-layout>
   	<label text="Login" tap="navigate" class="{{ selectedPage == 'login' ? 'selected' : '' }}" />
     <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
-    <label text="Products" tap="navigate" class="{{ selectedPage == 'products' ? 'selected' : '' }}" />
+    <label text="Wellness" tap="navigate" class="{{ selectedPage == 'products' ? 'selected' : '' }}" />
      <label text="Doctors" tap="navigate" class="{{ selectedPage == 'accounts' ? 'selected' : '' }}" />
     <!--<label text="Settings" tap="navigate" class="{{ selectedPage == 'settings' ? 'selected' : '' }}" />-->
     <!--<label text="Search" tap="navigate" class="{{ selectedPage == 'search' ? 'selected' : '' }}" />-->

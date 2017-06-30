@@ -10,7 +10,7 @@
         "spec": "3.0.1",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/tns-core-modules"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/tns-core-modules"
     ]
   ],
   "_from": "tns-core-modules-widgets@3.0.1",
@@ -44,7 +44,7 @@
   "_shasum": "835852cd593141808d2d33255806b9378187cf20",
   "_shrinkwrap": null,
   "_spec": "tns-core-modules-widgets@3.0.1",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/tns-core-modules",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/tns-core-modules",
   "author": {
     "name": "NativeScript team"
   },

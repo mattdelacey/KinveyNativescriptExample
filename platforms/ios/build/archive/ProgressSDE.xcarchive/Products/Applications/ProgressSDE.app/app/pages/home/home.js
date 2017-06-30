@@ -13,6 +13,12 @@ var source = new observableModule.Observable();
 // Place any code you want to run when the home page loads here.
 HomePage.prototype.contentLoaded = function(args) {
 
+  var activeUser = Kinvey.User.getActiveUser();
+
+  if ( !activeUser ) {
+    topmost().navigate("pages/login/login");
+  }
+
 	console.log('home loaded');
 
 

@@ -10,23 +10,23 @@
         "spec": "latest",
         "type": "tag"
       },
-      "/Users/delacey/nativescript/Progress SDE"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
   "_from": "kinvey-nativescript-sdk@latest",
-  "_id": "kinvey-nativescript-sdk@3.6.0-ns.6",
+  "_id": "kinvey-nativescript-sdk@3.6.0-ns.8",
   "_inCache": true,
   "_location": "/kinvey-nativescript-sdk",
-  "_nodeVersion": "6.5.0",
+  "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/kinvey-nativescript-sdk-3.6.0-ns.6.tgz_1498080019884_0.7075570966117084"
+    "tmp": "tmp/kinvey-nativescript-sdk-3.6.0-ns.8.tgz_1498270275169_0.9436115662101656"
   },
   "_npmUser": {
-    "name": "tejasranade",
-    "email": "tejas.ranade@gmail.com"
+    "name": "thomas.conner",
+    "email": "thomas.conner@me.com"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
     "raw": "kinvey-nativescript-sdk",
@@ -41,11 +41,11 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.6.tgz",
-  "_shasum": "25e4caf64859af81279270d43990e8cea452d3f0",
+  "_resolved": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.8.tgz",
+  "_shasum": "f4ad95babdfc0ed0f1306fce6d7dd97685e9598e",
   "_shrinkwrap": null,
   "_spec": "kinvey-nativescript-sdk",
-  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Kinvey"
   },
@@ -61,7 +61,7 @@
   "dependencies": {
     "es6-promise": "4.1.0",
     "events": "1.1.1",
-    "kinvey-js-sdk": "3.6.0-ns.3",
+    "kinvey-js-sdk": "3.6.0-ns.8",
     "nativescript-sqlite": "1.1.7"
   },
   "description": "Kinvey JavaScript SDK for NativeScript applications.",
@@ -73,10 +73,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "25e4caf64859af81279270d43990e8cea452d3f0",
-    "tarball": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.6.tgz"
+    "shasum": "f4ad95babdfc0ed0f1306fce6d7dd97685e9598e",
+    "tarball": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.8.tgz"
   },
-  "gitHead": "940458c59b8c9f9762e431e96feeba72a0c9e3bb",
+  "gitHead": "26451aa0d3f121bda485da89721f00b766023b8f",
   "homepage": "http://www.kinvey.com",
   "keywords": [
     "Kinvey",
@@ -115,5 +115,5 @@
     "preversion": "rm -rf node_modules && npm install && npm test"
   },
   "typings": "./src/kinvey.d.ts",
-  "version": "3.6.0-ns.6"
+  "version": "3.6.0-ns.8"
 }

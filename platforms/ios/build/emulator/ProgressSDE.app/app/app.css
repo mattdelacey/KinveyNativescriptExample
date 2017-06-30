@@ -2,14 +2,15 @@
 @import '~/nativescript-theme-core/css/core.light.css';
 
 action-bar {
-  background-color: #053140;
+  background-color: #1C5379;
   color: white;
 }
 label {
   margin: 20;
 }
+
 .drawer-content {
-  background-color: #053140;
+  background-color: #1C5379;
   color: white;
   padding-top: 20;
 }
@@ -27,6 +28,8 @@ label {
     border-radius: 3;
 }
 
+
+
 .icon {
    font-family: 'icomoon';
    font-size: 15;
@@ -41,12 +44,33 @@ TextField {
     margin: 10;
     padding: 10;
 }
+
+#tagline {
+  font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 20px; 
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+  color: #1C5379;
+}
+
+.Tagline label{
+  font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 555px; 
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+}
 /*Image {
     margin-top: 20;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 80;
 }*/
+
+
 Button {
     background: #454545;
     margin: 10;

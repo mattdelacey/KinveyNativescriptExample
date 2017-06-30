@@ -48,10 +48,10 @@ LoginPage.prototype.signIn = function(args) {
     pw = view.getViewById(parent, "pw");
     console.log(email.text);
 
-    // Kinvey.User.login(email.text, pw.text)
+    
     Kinvey.User.logout()
         .then(function() {
-            //return Kinvey.User.loginWithMIC('http://localhost:8100');
+            
             return Kinvey.User.login(email.text, pw.text);
 
         })
@@ -73,6 +73,14 @@ LoginPage.prototype.logout = function(args) {
         })
         .then(function(user) {
             console.log(user);
+            var dialogs = require("ui/dialogs");
+dialogs.alert({
+    title: "Logout",
+    message: "The user has successfully logged out.",
+    okButtonText: "ok"
+}).then(function() {
+    console.log("Dialog closed!");
+});
 
             console.log('logged out');
         })
@@ -111,18 +119,6 @@ LoginPage.prototype.signInMIC = function(args) {
         .catch(function(error) {
             console.log(error.message);
         });
-    /*.then(function() {
-            return Kinvey.User.loginWithMIC('http://localhost:8100',
-                    Kinvey.AuthorizationGrant.AuthorizationCodeAPI, { version: "v2" })
-                .then(function(user) {
-                    console.log(user);
-                    topmost().navigate("pages/home/home");
-                    console.log('logged in');
-                })
-                .catch(function(error) {
-                    console.log(error.message);
-                });
-        }*/
 }
 
 module.exports = new LoginPage();

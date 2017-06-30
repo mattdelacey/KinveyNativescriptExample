@@ -11,10 +11,6 @@ var _isString = require('lodash/isString');
 
 var _isString2 = _interopRequireDefault(_isString);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _request = require('../../request');
 
 var _errors = require('../../errors');
@@ -97,11 +93,7 @@ var DataStore = function () {
       var pathname = '/appdata/' + client.appKey;
       var request = new _request.CacheRequest({
         method: _request.RequestMethod.DELETE,
-        url: _url2.default.format({
-          protocol: client.apiProtocol,
-          host: client.apiHost,
-          pathname: pathname
-        }),
+        url: '' + client.apiHostname + pathname,
         properties: options.properties,
         timeout: options.timeout
       });

@@ -10,7 +10,7 @@
         "spec": ">=0.1.3 <0.2.0",
         "type": "range"
       },
-      "/Users/delacey/nativescript/Progress SDE"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
   "_from": "nativescript-push-notifications@>=0.1.3 <0.2.0",
@@ -44,7 +44,7 @@
   "_shasum": "d563a511f865bf23ba750e1134962c62beaaf98b",
   "_shrinkwrap": null,
   "_spec": "nativescript-push-notifications@^0.1.3",
-  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "NativeScript Team"
   },

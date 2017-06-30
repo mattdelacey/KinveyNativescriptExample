@@ -10,7 +10,7 @@
         "spec": "4.17.4",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk"
+      "/Users/delacey/nativescript/CoreSDK"
     ]
   ],
   "_from": "lodash@4.17.4",
@@ -44,7 +44,7 @@
   "_shasum": "78203a4d1c328ae1d86dca6460e369b57f4055ae",
   "_shrinkwrap": null,
   "_spec": "lodash@4.17.4",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk",
+  "_where": "/Users/delacey/nativescript/CoreSDK",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

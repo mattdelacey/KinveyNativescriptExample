@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "nativescript-theme-core",
+        "raw": "nativescript-theme-core@^1.0.4",
         "scope": null,
         "escapedName": "nativescript-theme-core",
         "name": "nativescript-theme-core",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^1.0.4",
+        "spec": ">=1.0.4 <2.0.0",
+        "type": "range"
       },
-      "/Users/delacey/nativescript/my-project-name"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
-  "_from": "nativescript-theme-core@latest",
+  "_from": "nativescript-theme-core@>=1.0.4 <2.0.0",
   "_id": "nativescript-theme-core@1.0.4",
   "_inCache": true,
   "_location": "/nativescript-theme-core",
@@ -29,23 +29,22 @@
   "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "nativescript-theme-core",
+    "raw": "nativescript-theme-core@^1.0.4",
     "scope": null,
     "escapedName": "nativescript-theme-core",
     "name": "nativescript-theme-core",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^1.0.4",
+    "spec": ">=1.0.4 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-theme-core/-/nativescript-theme-core-1.0.4.tgz",
   "_shasum": "cf2880c7fbf2fe5f43e2235d309750790803efe1",
   "_shrinkwrap": null,
-  "_spec": "nativescript-theme-core",
-  "_where": "/Users/delacey/nativescript/my-project-name",
+  "_spec": "nativescript-theme-core@^1.0.4",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Telerik",
     "email": "support@telerik.com"

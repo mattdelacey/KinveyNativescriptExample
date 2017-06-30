@@ -2,49 +2,49 @@
   "_args": [
     [
       {
-        "raw": "kinvey-js-sdk@3.6.0-ns.3",
+        "raw": "kinvey-js-sdk@3.6.0-ns.8",
         "scope": null,
         "escapedName": "kinvey-js-sdk",
         "name": "kinvey-js-sdk",
-        "rawSpec": "3.6.0-ns.3",
-        "spec": "3.6.0-ns.3",
+        "rawSpec": "3.6.0-ns.8",
+        "spec": "3.6.0-ns.8",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-nativescript-sdk"
     ]
   ],
-  "_from": "kinvey-js-sdk@3.6.0-ns.3",
-  "_id": "kinvey-js-sdk@3.6.0-ns.3",
+  "_from": "kinvey-js-sdk@3.6.0-ns.8",
+  "_id": "kinvey-js-sdk@3.6.0-ns.8",
   "_inCache": true,
   "_location": "/kinvey-js-sdk",
-  "_nodeVersion": "6.5.0",
+  "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/kinvey-js-sdk-3.6.0-ns.3.tgz_1497382811859_0.5061190668493509"
+    "tmp": "tmp/kinvey-js-sdk-3.6.0-ns.8.tgz_1498270156338_0.7486847380641848"
   },
   "_npmUser": {
-    "name": "tejasranade",
-    "email": "tejas.ranade@gmail.com"
+    "name": "thomas.conner",
+    "email": "thomas.conner@me.com"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "kinvey-js-sdk@3.6.0-ns.3",
+    "raw": "kinvey-js-sdk@3.6.0-ns.8",
     "scope": null,
     "escapedName": "kinvey-js-sdk",
     "name": "kinvey-js-sdk",
-    "rawSpec": "3.6.0-ns.3",
-    "spec": "3.6.0-ns.3",
+    "rawSpec": "3.6.0-ns.8",
+    "spec": "3.6.0-ns.8",
     "type": "version"
   },
   "_requiredBy": [
     "/kinvey-nativescript-sdk"
   ],
-  "_resolved": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.3.tgz",
-  "_shasum": "14397ae42369df15c80d7f63107e65e4af180b19",
+  "_resolved": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.8.tgz",
+  "_shasum": "872a7a6dae7823583a67407fdc5f96042593815e",
   "_shrinkwrap": null,
-  "_spec": "kinvey-js-sdk@3.6.0-ns.3",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk",
+  "_spec": "kinvey-js-sdk@3.6.0-ns.8",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-nativescript-sdk",
   "author": {
     "name": "Kinvey, Inc."
   },
@@ -101,14 +101,14 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "14397ae42369df15c80d7f63107e65e4af180b19",
-    "tarball": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.3.tgz"
+    "shasum": "872a7a6dae7823583a67407fdc5f96042593815e",
+    "tarball": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.8.tgz"
   },
   "engines": {
     "node": "6.9.1"
   },
   "es6": true,
-  "gitHead": "b299ab964d8c52cb1bd21a5777dbdfa24e85420f",
+  "gitHead": "dc519b7bb515ad09edb2e3f624419665e4f72762",
   "homepage": "http://www.kinvey.com",
   "keywords": [
     "Kinvey",
@@ -144,5 +144,5 @@
     "test:watch": "mocha -w --compilers js:babel-core/register -r babel-polyfill -s 100 --recursive test/index test",
     "transpile": "BABEL_ENV=production babel --no-comments --out-dir dist src"
   },
-  "version": "3.6.0-ns.3"
+  "version": "3.6.0-ns.8"
 }

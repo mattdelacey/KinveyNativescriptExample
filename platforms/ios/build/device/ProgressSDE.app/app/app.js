@@ -3,8 +3,8 @@ var Kinvey = require('kinvey-nativescript-sdk').Kinvey;
 // import { Kinvey } from 'kinvey-nativescript-sdk';
 
 Kinvey.init({
-	appKey: "kid_B1zDUUJMZ",
-	appSecret: "5dc457685be644d5837aefc27d412f3f"
+	appKey: "kid_rkROvpEZZ",
+	appSecret: "3e9371c28fec4e70a3daed628ba71722"
 });
 
 var pushPlugin = require("nativescript-push-notifications");

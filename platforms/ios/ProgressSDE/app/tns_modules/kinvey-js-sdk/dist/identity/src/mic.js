@@ -11,17 +11,13 @@ var _es6Promise = require('es6-promise');
 
 var _es6Promise2 = _interopRequireDefault(_es6Promise);
 
+var _qs = require('qs');
+
+var _qs2 = _interopRequireDefault(_qs);
+
 var _isString = require('lodash/isString');
 
 var _isString2 = _interopRequireDefault(_isString);
-
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
-var _urlJoin = require('url-join');
-
-var _urlJoin2 = _interopRequireDefault(_urlJoin);
 
 var _request = require('../../request');
 
@@ -96,8 +92,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
         session.identity = MobileIdentityConnect.identity;
         session.client_id = clientId;
         session.redirect_uri = redirectUri;
-        session.protocol = _this2.client.micProtocol;
-        session.host = _this2.client.micHost;
+        session.hostname = _this2.client.micHostname;
         return session;
       });
 
@@ -117,7 +112,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
           version = String(version);
         }
 
-        pathname = (0, _urlJoin2.default)(pathname, version.indexOf('v') === 0 ? version : 'v' + version);
+        pathname = '/' + (version.indexOf('v') === 0 ? version : 'v' + version) + pathname;
       }
 
       var request = new _request.KinveyRequest({
@@ -125,11 +120,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
-        url: _url2.default.format({
-          protocol: this.client.micProtocol,
-          host: this.client.micHost,
-          pathname: pathname
-        }),
+        url: '' + this.client.micHostname + pathname,
         properties: options.properties,
         body: {
           client_id: clientId,
@@ -151,6 +142,11 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
       var promise = _es6Promise2.default.resolve().then(function () {
         var pathname = '/oauth/auth';
         var popup = new Popup();
+        var queryStringObject = {
+          client_id: clientId,
+          redirect_uri: redirectUri,
+          response_type: 'code'
+        };
 
         if (options.version) {
           var version = options.version;
@@ -159,19 +155,10 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
             version = String(version);
           }
 
-          pathname = (0, _urlJoin2.default)(pathname, version.indexOf('v') === 0 ? version : 'v' + version);
+          pathname = '/' + (version.indexOf('v') === 0 ? version : 'v' + version) + pathname;
         }
 
-        return popup.open(_url2.default.format({
-          protocol: _this3.client.micProtocol,
-          host: _this3.client.micHost,
-          pathname: pathname,
-          query: {
-            client_id: clientId,
-            redirect_uri: redirectUri,
-            response_type: 'code'
-          }
-        }));
+        return popup.open((0, _utils.appendQuery)('' + _this3.client.micHostname + pathname, queryStringObject));
       }).then(function (popup) {
         var promise = new _es6Promise2.default(function (resolve, reject) {
           var redirected = false;
@@ -182,7 +169,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
                 redirected = true;
                 popup.removeAllListeners();
                 popup.close();
-                resolve(_url2.default.parse(event.url, true).query.code);
+                resolve(_qs2.default.parse(event.url.split('?')[1]).code);
               }
             } catch (error) {}
           }
@@ -193,7 +180,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
                 redirected = true;
                 popup.removeAllListeners();
                 popup.close();
-                resolve(_url2.default.parse(event.url, true).query.code);
+                resolve(_qs2.default.parse(event.url.split('?')[1]).code);
               } else if (redirected === false) {
                 popup.removeAllListeners();
                 popup.close();
@@ -246,7 +233,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
         var location = response.headers.get('location');
 
         if (location) {
-          return _url2.default.parse(location, true).query.code;
+          return _qs2.default.parse(location.split('?')[1]).code;
         }
 
         throw new _errors.MobileIdentityConnectError('Unable to authorize user with username ' + options.username + '.', 'A location header was not provided with a code to exchange for an auth token.');
@@ -265,11 +252,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: this.client.micProtocol,
-          host: this.client.micHost,
-          pathname: '/oauth/token'
-        }),
+        url: this.client.micHostname + '/oauth/token',
         properties: options.properties,
         body: {
           grant_type: 'authorization_code',
@@ -293,14 +276,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: this.client.micProtocol,
-          host: this.client.micHost,
-          pathname: '/oauth/invalidate',
-          query: {
-            user: user._id
-          }
-        }),
+        url: (0, _utils.appendQuery)(this.client.micHostname + '/oauth/invalidate', { user: user._id }),
         properties: options.properties
       });
       return request.execute().then(function (response) {

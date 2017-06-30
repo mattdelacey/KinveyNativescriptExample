@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "nativescript-materialdropdownlist",
+        "raw": "nativescript-materialdropdownlist@^1.0.15",
         "scope": null,
         "escapedName": "nativescript-materialdropdownlist",
         "name": "nativescript-materialdropdownlist",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^1.0.15",
+        "spec": ">=1.0.15 <2.0.0",
+        "type": "range"
       },
-      "/Users/delacey/nativescript/Progress SDE"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
-  "_from": "nativescript-materialdropdownlist@latest",
+  "_from": "nativescript-materialdropdownlist@>=1.0.15 <2.0.0",
   "_id": "nativescript-materialdropdownlist@1.0.15",
   "_inCache": true,
   "_location": "/nativescript-materialdropdownlist",
@@ -29,23 +29,22 @@
   "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "nativescript-materialdropdownlist",
+    "raw": "nativescript-materialdropdownlist@^1.0.15",
     "scope": null,
     "escapedName": "nativescript-materialdropdownlist",
     "name": "nativescript-materialdropdownlist",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^1.0.15",
+    "spec": ">=1.0.15 <2.0.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-materialdropdownlist/-/nativescript-materialdropdownlist-1.0.15.tgz",
   "_shasum": "202afd0f01d8cec1bf8ca167392cea6ce54cb8a9",
   "_shrinkwrap": null,
-  "_spec": "nativescript-materialdropdownlist",
-  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "_spec": "nativescript-materialdropdownlist@^1.0.15",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Bradley Gore",
     "email": "youremail@yourdomain.com"

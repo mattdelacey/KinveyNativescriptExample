@@ -117,7 +117,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
           version = String(version);
         }
 
-        pathname = (0, _urlJoin2.default)(pathname, version.indexOf('v') === 0 ? version : 'v' + version);
+        pathname = (0, _urlJoin2.default)(version.indexOf('v') === 0 ? version : 'v' + version, pathname);
       }
 
       var request = new _request.KinveyRequest({
@@ -159,7 +159,7 @@ var MobileIdentityConnect = exports.MobileIdentityConnect = function (_Identity)
             version = String(version);
           }
 
-          pathname = (0, _urlJoin2.default)(pathname, version.indexOf('v') === 0 ? version : 'v' + version);
+          pathname = (0, _urlJoin2.default)(version.indexOf('v') === 0 ? version : 'v' + version, pathname);
         }
 
         return popup.open(_url2.default.format({

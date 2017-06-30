@@ -26,8 +26,8 @@
 
       <!-- Home page contents -->
       <stack-layout loaded="contentLoaded">
-        <image src="{{ brand.LogoFileName }}" id="logo" tap="fun" width="75%" margin="20 0 0 0" />
-        <label id="tagline" margin="20" horizontalAlignment="center" textWrap="true" class="label font-weight-bold m-b-5" text="{{ brand.HomeScreenText }}" />
+        <image src="{{ brand.LogoFileName }}" id="logo" width="75%" margin="20 0 0 0" />
+        <label id="tagline" margin="20" horizontalAlignment="center" textWrap="true" class="Tagline" text="{{ brand.HomeScreenText }}" />
 
       </stack-layout>
 

@@ -78,7 +78,7 @@ dialogs.alert({
     title: "Logout",
     message: "The user has successfully logged out.",
     okButtonText: "ok"
-}).then(function () {
+}).then(function() {
     console.log("Dialog closed!");
 });
 
@@ -119,18 +119,6 @@ LoginPage.prototype.signInMIC = function(args) {
         .catch(function(error) {
             console.log(error.message);
         });
-    /*.then(function() {
-            return Kinvey.User.loginWithMIC('http://localhost:8100',
-                    Kinvey.AuthorizationGrant.AuthorizationCodeAPI, { version: "v2" })
-                .then(function(user) {
-                    console.log(user);
-                    topmost().navigate("pages/home/home");
-                    console.log('logged in');
-                })
-                .catch(function(error) {
-                    console.log(error.message);
-                });
-        }*/
 }
 
 module.exports = new LoginPage();

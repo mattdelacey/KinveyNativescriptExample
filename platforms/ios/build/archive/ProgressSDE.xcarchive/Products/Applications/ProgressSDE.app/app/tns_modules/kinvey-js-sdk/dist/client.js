@@ -18,6 +18,10 @@ var _isNumber = require('lodash/isNumber');
 
 var _isNumber2 = _interopRequireDefault(_isNumber);
 
+var _url = require('url');
+
+var _url2 = _interopRequireDefault(_url);
+
 var _errors = require('./errors');
 
 var _utils = require('./utils');
@@ -39,27 +43,36 @@ var Client = function () {
     options = (0, _assign2.default)({
       apiHostname: 'https://baas.kinvey.com',
       micHostname: 'https://auth.kinvey.com',
-      liveServiceHostname: 'https://kls.kinvey.com',
       defaultTimeout: 60000
     }, options);
 
-    var apiHostname = options.apiHostname;
-    if ((0, _isString2.default)(apiHostname) === false) {
-      apiHostname = String(apiHostname);
-    }
-    this.apiHostname = apiHostname.replace(/\/+$/, '');
+    this.apiHostname = options.apiHostname;
 
-    var micHostname = options.micHostname;
-    if ((0, _isString2.default)(apiHostname) === false) {
-      micHostname = String(micHostname);
+    if ((0, _isString2.default)(this.apiHostname) === false) {
+      throw new KivneyError('apiHostname must be a string');
     }
-    this.micHostname = micHostname.replace(/\/+$/, '');
 
-    var liveServiceHostname = options.liveServiceHostname;
-    if ((0, _isString2.default)(liveServiceHostname) === false) {
-      liveServiceHostname = String(liveServiceHostname);
+    if (/^https?:\/\//i.test(this.apiHostname) === false) {
+      this.apiHostname = 'https://' + this.apiHostname;
     }
-    this.liveServiceHostname = liveServiceHostname.replace(/\/+$/, '');
+
+    var apiHostnameParsed = _url2.default.parse(this.apiHostname);
+    this.apiProtocol = apiHostnameParsed.protocol;
+    this.apiHost = apiHostnameParsed.host;
+
+    this.micHostname = options.micHostname;
+
+    if ((0, _isString2.default)(this.micHostname) === false) {
+      throw new KivneyError('micHostname must be a string');
+    }
+
+    if (/^https?:\/\//i.test(this.micHostname) === false) {
+      this.micHostname = 'https://' + this.micHostname;
+    }
+
+    var micHostnameParsed = _url2.default.parse(this.micHostname);
+    this.micProtocol = micHostnameParsed.protocol;
+    this.micHost = micHostnameParsed.host;
 
     this.appKey = options.appKey;
 
@@ -69,48 +82,23 @@ var Client = function () {
 
     this.encryptionKey = options.encryptionKey;
 
-    if ((0, _utils.isDefined)(options.appVersion)) {
-      var appVersion = options.appVersion;
+    this.appVersion = options.appVersion;
 
-      if ((0, _isString2.default)(appVersion) === false) {
-        appVersion = String(appVersion);
-      }
+    this.defaultTimeout = options.defaultTimeout;
 
-      this.appVersion = appVersion;
+    if ((0, _isNumber2.default)(this.defaultTimeout) === false || isNaN(this.defaultTimeout)) {
+      throw new _errors.KinveyError('Invalid default timeout. Default timeout must be a number.');
     }
 
-    if ((0, _utils.isDefined)(options.defaultTimeout)) {
-      var timeout = parseInt(options.defaultTimeout, 10);
-
-      if ((0, _isNumber2.default)(timeout) === false || isNaN(timeout)) {
-        throw new _errors.KinveyError('Invalid timeout. Timeout must be a number.');
-      }
-
-      if (timeout < 0) {
-        _utils.Log.info('Default timeout is less than 0. Setting default timeout to 60000ms.');
-        timeout = 60000;
-      }
-
-      this.defaultTimeout = timeout;
+    if (this.defaultTimeout < 0) {
+      _utils.Log.info('Default timeout is less than 0. Setting default timeout to 60000ms.');
+      this.defaultTimeout = 60000;
     }
+
+    Object.freeze(this);
   }
 
   _createClass(Client, [{
-    key: 'toPlainObject',
-    value: function toPlainObject() {
-      return {
-        apiHostname: this.apiHostname,
-        micHostname: this.micHostname,
-        liveServiceHostname: this.liveServiceHostname,
-        appKey: this.appKey,
-        appSecret: this.appSecret,
-        masterSecret: this.masterSecret,
-        encryptionKey: this.encryptionKey,
-        appVersion: this.appVersion,
-        defaultTimeout: this.defaultTimeout
-      };
-    }
-  }, {
     key: 'activeUser',
     get: function get() {
       return _activeUserHelper.ActiveUserHelper.get(this);

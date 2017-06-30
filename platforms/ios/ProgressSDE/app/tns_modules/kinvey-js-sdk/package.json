@@ -2,49 +2,39 @@
   "_args": [
     [
       {
-        "raw": "kinvey-js-sdk@3.6.0-ns.3",
+        "raw": "kinvey-js-sdk@file:///Users/delacey/nativescript/CoreSDK",
         "scope": null,
         "escapedName": "kinvey-js-sdk",
         "name": "kinvey-js-sdk",
-        "rawSpec": "3.6.0-ns.3",
-        "spec": "3.6.0-ns.3",
-        "type": "version"
+        "rawSpec": "file:///Users/delacey/nativescript/CoreSDK",
+        "spec": "/Users/delacey/nativescript/CoreSDK",
+        "type": "directory"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk"
+      "/Users/delacey/nativescript/SDK"
     ]
   ],
-  "_from": "kinvey-js-sdk@3.6.0-ns.3",
-  "_id": "kinvey-js-sdk@3.6.0-ns.3",
+  "_from": "../CoreSDK",
+  "_id": "kinvey-js-sdk@3.5.0",
   "_inCache": true,
   "_location": "/kinvey-js-sdk",
-  "_nodeVersion": "6.5.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/kinvey-js-sdk-3.6.0-ns.3.tgz_1497382811859_0.5061190668493509"
-  },
-  "_npmUser": {
-    "name": "tejasranade",
-    "email": "tejas.ranade@gmail.com"
-  },
-  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "kinvey-js-sdk@3.6.0-ns.3",
+    "raw": "kinvey-js-sdk@file:///Users/delacey/nativescript/CoreSDK",
     "scope": null,
     "escapedName": "kinvey-js-sdk",
     "name": "kinvey-js-sdk",
-    "rawSpec": "3.6.0-ns.3",
-    "spec": "3.6.0-ns.3",
-    "type": "version"
+    "rawSpec": "file:///Users/delacey/nativescript/CoreSDK",
+    "spec": "/Users/delacey/nativescript/CoreSDK",
+    "type": "directory"
   },
   "_requiredBy": [
     "/kinvey-nativescript-sdk"
   ],
-  "_resolved": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.3.tgz",
-  "_shasum": "14397ae42369df15c80d7f63107e65e4af180b19",
+  "_resolved": "file:../CoreSDK",
+  "_shasum": "140eee4a524f16c507f81864b909c5833b215106",
   "_shrinkwrap": null,
-  "_spec": "kinvey-js-sdk@3.6.0-ns.3",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-nativescript-sdk",
+  "_spec": "kinvey-js-sdk@file:///Users/delacey/nativescript/CoreSDK",
+  "_where": "/Users/delacey/nativescript/SDK",
   "author": {
     "name": "Kinvey, Inc."
   },
@@ -70,7 +60,6 @@
     "rxjs": "5.4.0",
     "sift": "3.3.10",
     "url": "0.11.0",
-    "url-join": "2.0.2",
     "url-pattern": "1.0.3"
   },
   "description": "Kinvey JavaScript SDK for developing JavaScript applications. This is the core code used to create specific bundles for all other JavaScript platforms.",
@@ -99,16 +88,11 @@
     "nock": "9.0.13",
     "request": "2.81.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "14397ae42369df15c80d7f63107e65e4af180b19",
-    "tarball": "https://registry.npmjs.org/kinvey-js-sdk/-/kinvey-js-sdk-3.6.0-ns.3.tgz"
-  },
   "engines": {
     "node": "6.9.1"
   },
   "es6": true,
-  "gitHead": "b299ab964d8c52cb1bd21a5777dbdfa24e85420f",
+  "gitHead": "68409a18cea43b6c1d1ce008053663a2af1833ec",
   "homepage": "http://www.kinvey.com",
   "keywords": [
     "Kinvey",
@@ -117,15 +101,10 @@
   ],
   "license": "Apache-2.0",
   "main": "./dist/index.js",
-  "maintainers": [
-    {
-      "name": "thomas.conner",
-      "email": "thomas.conner@me.com"
-    }
-  ],
   "name": "kinvey-js-sdk",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "# Overview [![Build Status](https://travis-ci.org/Kinvey/js-sdk.svg?branch=master)](https://travis-ci.org/Kinvey/js-sdk) [![Code Climate](https://codeclimate.com/github/Kinvey/js-sdk/badges/gpa.svg)](https://codeclimate.com/github/Kinvey/js-sdk) [![codecov](https://codecov.io/gh/Kinvey/js-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/Kinvey/js-sdk)\n\n[Kinvey](http://www.kinvey.com) (pronounced Kin-vey, like convey) makes it ridiculously easy for developers to setup, use and operate a cloud backend for their mobile apps. They don't have to worry about connecting to various cloud services, setting up servers for their backend, or maintaining and scaling them.\n\nThe JS SDK is used as a way to share common code for platform specific SDK shims. Here is a list of the platforms we currently support.\n\n* [Angular](https://github.com/Kinvey/angular-sdk)\n* [Angular 2](https://github.com/Kinvey/angular2-sdk)\n* [Backbone](https://github.com/Kinvey/backbone-sdk)\n* [HTML5](https://github.com/Kinvey/html5-sdk)\n* [NodeJS](https://github.com/Kinvey/node-sdk)\n* [PhoneGap](https://github.com/Kinvey/phonegap-sdk)\n* [Titanium](https://github.com/Kinvey/titanium-sdk)\n\n## License\nSee [LICENSE](LICENSE) for details.\n\n## Contributing\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for details on reporting bugs and making contributions.\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Kinvey/js-sdk.git"
@@ -144,5 +123,5 @@
     "test:watch": "mocha -w --compilers js:babel-core/register -r babel-polyfill -s 100 --recursive test/index test",
     "transpile": "BABEL_ENV=production babel --no-comments --out-dir dist src"
   },
-  "version": "3.6.0-ns.3"
+  "version": "3.5.0"
 }

@@ -10,7 +10,7 @@
         "spec": ">=1.1.7 <2.0.0",
         "type": "range"
       },
-      "/Users/delacey/nativescript/Progress SDE"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
   "_from": "nativescript-sqlite@>=1.1.7 <2.0.0",
@@ -38,13 +38,14 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/"
+    "/",
+    "/kinvey-nativescript-sdk"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-sqlite/-/nativescript-sqlite-1.1.7.tgz",
   "_shasum": "08b729e141ec2818a04eef3548133d8d666e17c4",
   "_shrinkwrap": null,
   "_spec": "nativescript-sqlite@^1.1.7",
-  "_where": "/Users/delacey/nativescript/Progress SDE",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Nathanael Anderson",
     "email": "nathan@master-technology.com"

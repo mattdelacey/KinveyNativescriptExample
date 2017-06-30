@@ -25,7 +25,7 @@
         <Button class="btn btn-outline" text="Sign in" tap="signIn"/>
         <Button class="btn btn-outline" text="Sign in w/ MIC" tap="signInMIC"/>
         <Button class="btn btn-outline" text="Logout" tap="logout"/>
-        <Button class="btn btn-outline" text="Sign up for Progress" tap="register"/>
+        
     </StackLayout>
     </drawer:rad-side-drawer.mainContent>
     <drawer:rad-side-drawer.drawerContent>

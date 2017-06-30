@@ -10,7 +10,7 @@
         "spec": "3.3.10",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk"
     ]
   ],
   "_from": "sift@3.3.10",
@@ -44,7 +44,7 @@
   "_shasum": "9512dd45a016837df0c3e67d1c32ab2329df00cc",
   "_shrinkwrap": null,
   "_spec": "sift@3.3.10",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk",
   "author": {
     "name": "Craig Condon",
     "email": "craig.j.condon@gmail.com",

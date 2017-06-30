@@ -10,7 +10,7 @@
         "spec": ">=3.0.1 <4.0.0",
         "type": "range"
       },
-      "/Users/delacey/nativescript/my-project-name"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
   "_from": "nativescript-statusbar@>=3.0.1 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "b9686b9799a0d2ce6f73bc7760cd542ca6062d12",
   "_shrinkwrap": null,
   "_spec": "nativescript-statusbar@^3.0.1",
-  "_where": "/Users/delacey/nativescript/my-project-name",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "Burke Holland",
     "email": "burkeholland@gmail.com"

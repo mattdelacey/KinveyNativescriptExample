@@ -10,7 +10,7 @@
         "spec": "2.0.2",
         "type": "version"
       },
-      "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk"
+      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk"
     ]
   ],
   "_from": "url-join@2.0.2",
@@ -44,7 +44,7 @@
   "_shasum": "c072756967ad24b8b59e5741551caac78f50b8b7",
   "_shrinkwrap": null,
   "_spec": "url-join@2.0.2",
-  "_where": "/Users/delacey/nativescript/Progress SDE/node_modules/kinvey-js-sdk",
+  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk",
   "author": {
     "name": "José F. Romaniello",
     "email": "jfromaniello@gmail.com",

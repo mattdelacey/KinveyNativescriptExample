@@ -1,7 +1,7 @@
 {
-	"time": "Wed Jun 21 2017 18:01:37 GMT-0400 (EDT)",
+	"time": "Tue Jun 27 2017 12:56:20 GMT-0400 (EDT)",
 	"bundle": false,
 	"release": false,
-	"changesRequireBuild": true,
-	"changesRequireBuildTime": "Wed Jun 21 2017 18:01:37 GMT-0400 (EDT)"
+	"changesRequireBuild": false,
+	"changesRequireBuildTime": "Fri Jun 23 2017 22:46:39 GMT-0400 (EDT)"
 }

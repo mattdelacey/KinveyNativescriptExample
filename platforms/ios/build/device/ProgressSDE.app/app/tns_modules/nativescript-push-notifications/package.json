@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "nativescript-push-notifications",
+        "raw": "nativescript-push-notifications@^0.1.3",
         "scope": null,
         "escapedName": "nativescript-push-notifications",
         "name": "nativescript-push-notifications",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "rawSpec": "^0.1.3",
+        "spec": ">=0.1.3 <0.2.0",
+        "type": "range"
       },
-      "/Users/delacey/nativescript/my-project-name"
+      "/Users/delacey/nativescript/ProgressSDE"
     ]
   ],
-  "_from": "nativescript-push-notifications@latest",
+  "_from": "nativescript-push-notifications@>=0.1.3 <0.2.0",
   "_id": "nativescript-push-notifications@0.1.3",
   "_inCache": true,
   "_location": "/nativescript-push-notifications",
@@ -29,23 +29,22 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "nativescript-push-notifications",
+    "raw": "nativescript-push-notifications@^0.1.3",
     "scope": null,
     "escapedName": "nativescript-push-notifications",
     "name": "nativescript-push-notifications",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "rawSpec": "^0.1.3",
+    "spec": ">=0.1.3 <0.2.0",
+    "type": "range"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-push-notifications/-/nativescript-push-notifications-0.1.3.tgz",
   "_shasum": "d563a511f865bf23ba750e1134962c62beaaf98b",
   "_shrinkwrap": null,
-  "_spec": "nativescript-push-notifications",
-  "_where": "/Users/delacey/nativescript/my-project-name",
+  "_spec": "nativescript-push-notifications@^0.1.3",
+  "_where": "/Users/delacey/nativescript/ProgressSDE",
   "author": {
     "name": "NativeScript Team"
   },
