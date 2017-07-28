@@ -10,7 +10,7 @@
     }
   },
   "dependencies": {
-    "kinvey-nativescript-sdk": "^3.6.0-ns.8",
+    "kinvey-nativescript-sdk": "^3.7.1-rc.1",
     "nativescript-drop-down": "^3.0.2",
     "nativescript-materialdropdownlist": "^1.0.15",
     "nativescript-push-notifications": "^0.1.3",

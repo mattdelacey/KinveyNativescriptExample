@@ -10,7 +10,7 @@
         "spec": "0.2.1",
         "type": "version"
       },
-      "/Users/delacey/nativescript/ProgressSDE/node_modules/nativescript-push-notifications"
+      "/Users/delacey/nativescript/my-project-name/node_modules/nativescript-push-notifications"
     ]
   ],
   "_from": "nativescript-hook@0.2.1",
@@ -40,7 +40,7 @@
   "_shasum": "786225056db20fa49e786451dccd64b52e3864d9",
   "_shrinkwrap": null,
   "_spec": "nativescript-hook@0.2.1",
-  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/nativescript-push-notifications",
+  "_where": "/Users/delacey/nativescript/my-project-name/node_modules/nativescript-push-notifications",
   "author": {
     "name": "NativeScript"
   },

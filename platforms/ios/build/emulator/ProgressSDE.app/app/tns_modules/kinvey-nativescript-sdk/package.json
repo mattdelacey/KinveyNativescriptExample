@@ -2,50 +2,40 @@
   "_args": [
     [
       {
-        "raw": "kinvey-nativescript-sdk",
+        "raw": "../SDK",
         "scope": null,
-        "escapedName": "kinvey-nativescript-sdk",
-        "name": "kinvey-nativescript-sdk",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "../SDK",
+        "spec": "/Users/delacey/nativescript/SDK",
+        "type": "directory"
       },
-      "/Users/delacey/nativescript/ProgressSDE"
+      "/Users/delacey/nativescript/my-project-name"
     ]
   ],
-  "_from": "kinvey-nativescript-sdk@latest",
-  "_id": "kinvey-nativescript-sdk@3.6.0-ns.8",
+  "_from": "../SDK",
+  "_id": "kinvey-nativescript-sdk@3.4.5",
   "_inCache": true,
   "_location": "/kinvey-nativescript-sdk",
-  "_nodeVersion": "6.9.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/kinvey-nativescript-sdk-3.6.0-ns.8.tgz_1498270275169_0.9436115662101656"
-  },
-  "_npmUser": {
-    "name": "thomas.conner",
-    "email": "thomas.conner@me.com"
-  },
-  "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "kinvey-nativescript-sdk",
+    "raw": "../SDK",
     "scope": null,
-    "escapedName": "kinvey-nativescript-sdk",
-    "name": "kinvey-nativescript-sdk",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "../SDK",
+    "spec": "/Users/delacey/nativescript/SDK",
+    "type": "directory"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.8.tgz",
-  "_shasum": "f4ad95babdfc0ed0f1306fce6d7dd97685e9598e",
+  "_resolved": "file:../SDK",
+  "_shasum": "1c6339afbcf714b2d1480f8022ed27d0e2880209",
   "_shrinkwrap": null,
-  "_spec": "kinvey-nativescript-sdk",
-  "_where": "/Users/delacey/nativescript/ProgressSDE",
+  "_spec": "../SDK",
+  "_where": "/Users/delacey/nativescript/my-project-name",
   "author": {
     "name": "Kinvey"
   },
@@ -61,22 +51,17 @@
   "dependencies": {
     "es6-promise": "4.1.0",
     "events": "1.1.1",
-    "kinvey-js-sdk": "3.6.0-ns.8",
-    "nativescript-sqlite": "1.1.7"
+    "kinvey-js-sdk": "file:///Users/delacey/nativescript/CoreSDK"
   },
   "description": "Kinvey JavaScript SDK for NativeScript applications.",
   "devDependencies": {
+    "@types/node": "7.0.22",
     "nativescript-dev-typescript": "0.4.5",
     "tns-core-modules": "3.0.1",
     "tns-platform-declarations": "3.0.1",
     "typescript": "2.3.3"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "f4ad95babdfc0ed0f1306fce6d7dd97685e9598e",
-    "tarball": "https://registry.npmjs.org/kinvey-nativescript-sdk/-/kinvey-nativescript-sdk-3.6.0-ns.8.tgz"
-  },
-  "gitHead": "26451aa0d3f121bda485da89721f00b766023b8f",
+  "gitHead": "f11d53e38866c63cf89ca1f15dfb9f5d7867f0fc",
   "homepage": "http://www.kinvey.com",
   "keywords": [
     "Kinvey",
@@ -85,16 +70,6 @@
   ],
   "license": "Apache-2.0",
   "main": "src/index.js",
-  "maintainers": [
-    {
-      "name": "tejasranade",
-      "email": "tejas.ranade@gmail.com"
-    },
-    {
-      "name": "thomas.conner",
-      "email": "thomas.conner@me.com"
-    }
-  ],
   "name": "kinvey-nativescript-sdk",
   "nativescript": {
     "platforms": {
@@ -103,17 +78,16 @@
     }
   },
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "# Overview\n\n[Kinvey](http://www.kinvey.com) (pronounced Kin-vey, like convey) makes it ridiculously easy for developers to setup, use and operate a cloud backend for their mobile apps. They don't have to worry about connecting to various cloud services, setting up servers for their backend, or maintaining and scaling them.\n\nThis SDK makes it easy to connect your [Nativescript](https://www.nativescript.org/) apps with Kinvey.\n\n## Installation\n\n#### Using npm\nInstall and save the Kinvey NativeScript SDK:\n\n```javascript\nnpm install --save kinvey-nativescript-sdk\n```\n\nImport the Kinvey NativeScript SDK (ES6/TypeScript):\n\n```javascript\nimport Kinvey from 'kinvey-nativescript-sdk';\n```\n\nA [TypeScript](https://www.typescriptlang.org/) type definition file is included in the distribution and will automatically be picked up by the TypeScript compiler.\n\n#### Using the Kinvey CDN\n\n```html\n<script src=\"https://download.kinvey.com/js/kinvey-nativescript-sdk-3.5.0.min.js\"></script>\n```\n\nA [TypeScript](https://www.typescriptlang.org/) type definition file is available at\n\n```html\nhttps://download.kinvey.com/js/kinvey-nativescript-sdk-3.5.0.d.ts\n```\n\nYou will then be able to access Kinvey NativeScript SDK via `window.Kinvey`.\n\n## Documentation\n\nWe're working on adding Nativescript docs to our [Devcenter](http://devcenter.kinvey.com)! For documentation on our core Javascript APIs, see http://devcenter.kinvey.com/html5\n\n## Known Limitations\n\nCurrently, this SDK supports basic Kinvey auth and data functions, as well as offline behaviors and data synchronization. We're still working on supporting the following features -\n\n* We currently only support Kinvey auth. Support for [Mobile Identity Connect](http://devcenter.kinvey.com/guides/mobile-identity-connect) is coming soon!\n* Push notifications.\n* Encryption on the local storage.\n* Nativescript docs.\n\n## License\nSee [LICENSE](LICENSE) for details.\n\n## Contributing\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for details on reporting bugs and making contributions.\n",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Kinvey/nativescript-sdk.git"
   },
   "scripts": {
     "build": "tsc",
-    "install": "npm run build",
     "postversion": "git push && git push --tags",
     "preversion": "rm -rf node_modules && npm install && npm test"
   },
-  "typings": "./src/kinvey.d.ts",
-  "version": "3.6.0-ns.8"
+  "version": "3.4.5"
 }

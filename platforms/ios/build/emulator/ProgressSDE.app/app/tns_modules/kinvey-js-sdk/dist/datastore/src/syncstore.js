@@ -6,10 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _request = require('../../request');
 
 var _errors = require('../../errors');
@@ -59,11 +55,7 @@ var SyncStore = function (_CacheStore) {
 
         var request = new _request.CacheRequest({
           method: _request.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this2.client.apiProtocol,
-            host: _this2.client.apiHost,
-            pathname: _this2.pathname
-          }),
+          url: '' + _this2.client.apiHostname + _this2.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -98,11 +90,7 @@ var SyncStore = function (_CacheStore) {
 
           var request = new _request.CacheRequest({
             method: _request.RequestMethod.GET,
-            url: _url2.default.format({
-              protocol: _this3.client.apiProtocol,
-              host: _this3.client.apiHost,
-              pathname: _this3.pathname + '/' + id
-            }),
+            url: '' + _this3.client.apiHostname + _this3.pathname + '/' + id,
             properties: options.properties,
             timeout: options.timeout
           });
@@ -137,11 +125,7 @@ var SyncStore = function (_CacheStore) {
 
         var request = new _request.CacheRequest({
           method: _request.RequestMethod.POST,
-          url: _url2.default.format({
-            protocol: _this4.client.apiProtocol,
-            host: _this4.client.apiHost,
-            pathname: _this4.pathname + '/_group'
-          }),
+          url: '' + _this4.client.apiHostname + _this4.pathname + '/_group',
           properties: options.properties,
           aggregation: aggregation,
           timeout: options.timeout
@@ -174,11 +158,7 @@ var SyncStore = function (_CacheStore) {
 
           var request = new _request.CacheRequest({
             method: _request.RequestMethod.GET,
-            url: _url2.default.format({
-              protocol: _this5.client.apiProtocol,
-              host: _this5.client.apiHost,
-              pathname: _this5.pathname
-            }),
+            url: '' + _this5.client.apiHostname + _this5.pathname,
             properties: options.properties,
             query: query,
             timeout: options.timeout

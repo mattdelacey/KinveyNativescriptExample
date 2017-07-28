@@ -33,10 +33,6 @@ var _isEmpty = require('lodash/isEmpty');
 
 var _isEmpty2 = _interopRequireDefault(_isEmpty);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _query = require('../../query');
 
 var _query2 = _interopRequireDefault(_query);
@@ -56,6 +52,10 @@ var _activeUserHelper = require('../../entity/src/activeUserHelper');
 var _request = require('./request');
 
 var _request2 = _interopRequireDefault(_request);
+
+var _cache = require('./cache');
+
+var _cache2 = _interopRequireDefault(_cache);
 
 var _headers = require('./headers');
 
@@ -310,11 +310,7 @@ var KinveyRequest = exports.KinveyRequest = function (_NetworkRequest) {
                   'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 authType: AuthType.App,
-                url: _url2.default.format({
-                  protocol: session.protocol || _this5.client.micProtocol,
-                  host: session.host || _this5.client.micHost,
-                  pathname: '/oauth/token'
-                }),
+                url: (session.hostname || _this5.client.micHostname) + '/oauth/token',
                 body: {
                   grant_type: 'refresh_token',
                   client_id: session.client_id,
@@ -335,11 +331,7 @@ var KinveyRequest = exports.KinveyRequest = function (_NetworkRequest) {
                 var loginRequest = new KinveyRequest({
                   method: _request.RequestMethod.POST,
                   authType: AuthType.App,
-                  url: _url2.default.format({
-                    protocol: _this5.client.apiProtocol,
-                    host: _this5.client.apiHost,
-                    pathname: '/user/' + _this5.client.appKey + '/login'
-                  }),
+                  url: _this5.client.apiHostname + '/user/' + _this5.client.appKey + '/login',
                   properties: _this5.properties,
                   body: data,
                   timeout: _this5.timeout,

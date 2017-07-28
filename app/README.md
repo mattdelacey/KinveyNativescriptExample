@@ -1,19 +1,10 @@
-# NativeScript Drawer Template
+# NativeScript Kinvey Example
 
-A quick-and-dirty template for starting a new [NativeScript](https://www.nativescript.org/) JavaScript app with drawer navigation pre-scaffolded.
+This example heavily leverages the drawer navigation examples provided by @tjvantoll and @ignaciofuentes.  Many thanks to those guys for providing such a great example!  Check out https://github.com/tjvantoll/nativescript-template-drawer (which also links to @ignaciofuentes' TypeScript example).
 
-> **NOTE**: Want to use TypeScript instead? Check out [@ignaciofuentes’ TypeScript drawer template](https://github.com/ignaciofuentes/nativescript-template-drawer-ts).
 
-## Usage
+## Setup
 
-`tns create my-project-name --template nativescript-template-drawer`
-
-## Screenshots
-
-![](http://i.imgur.com/i5Qm4Xh.png)
-![](http://i.imgur.com/sneoZhC.png)
-
----
-
-![](http://i.imgur.com/ktJtT0y.png)
-![](http://i.imgur.com/6Kha8WY.png)
+  * replace appkey and appsecret in app.js with your Kinvey appkey and appsecret (found in the Kinvey console)
+  * import the collections found within the collections folder into newly created collections within Kinvey with the same name
+  * tns run ios

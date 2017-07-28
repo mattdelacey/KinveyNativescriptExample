@@ -13,43 +13,31 @@ var source = new observableModule.Observable();
 // Place any code you want to run when the home page loads here.
 HomePage.prototype.contentLoaded = function(args) {
 
-  var activeUser = Kinvey.User.getActiveUser();
+    var activeUser = Kinvey.User.getActiveUser();
 
-  if ( !activeUser ) {
-    topmost().navigate("pages/login/login");
-  }
+    if (!activeUser) {
+        topmost().navigate("pages/login/login");
+    }
 
-	console.log('home loaded');
+    console.log('home loaded');
 
+    var dataStore = Kinvey.DataStore.collection('DemoBrandingData', Kinvey.DataStoreType.Network);
 
-	//load demobrandingdata
-	//
-	var dataStore = Kinvey.DataStore.collection('DemoBrandingData', Kinvey.DataStoreType.Network);
-	var stream = dataStore.find();
-	stream.subscribe(function onNext(entities) {
-  		console.log(JSON.stringify(entities));
+    // Pull branding data
+    //
+    var subscription = dataStore.find()
+        .subscribe(function(entities) {
+            console.log(entities);
+            var page = args.object;
+            page.bindingContext = { brand: entities[0] };
+        }, function(error) {
+            console.log(error);
+        }, function() {
+            console.log('finished pulling home data');
+        });
 
-  		var page = args.object;	
+    //
 
-    	
-  		page.bindingContext = {brand: entities[0]};
-	}, function onError(error) {
-  		console.log(error);
-	}, function onComplete() {
-  		console.log('demobranding data complete');
-	});
-
-}
-
-HomePage.prototype.fun = function() {
-  var page = topmost().currentPage;
-  var logo = page.getViewById("logo");
-  logo.animate({
-    rotate: 3600,
-    duration: 3000
-  }).then(function() {
-    logo.rotate = 0;
-  });
 }
 
 module.exports = new HomePage();

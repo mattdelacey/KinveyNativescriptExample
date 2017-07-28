@@ -10,7 +10,7 @@
         "spec": "2.0.4",
         "type": "version"
       },
-      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk"
+      "/Users/delacey/nativescript/CoreSDK"
     ]
   ],
   "_from": "fast-memory-cache@2.0.4",
@@ -40,7 +40,7 @@
   "_shasum": "aaac59efb56c17fe4ebf6f7c095db210f58cfb4d",
   "_shrinkwrap": null,
   "_spec": "fast-memory-cache@2.0.4",
-  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk",
+  "_where": "/Users/delacey/nativescript/CoreSDK",
   "author": {
     "name": "Konstantin Ikonnikov",
     "email": "ikokostya@gmail.com"

@@ -6,9 +6,9 @@ Environment  LANG=en_US.US-ASCII PATH=/Applications/Xcode.app/Contents/Developer
 BuilderIdent ProcessPCH\ /Users/delacey/nativescript/ProgressSDE/platforms/ios/build/sharedpch/ProgressSDE-Prefix-ertpkggboozcybcvovixfofjpklu/ProgressSDE-Prefix.pch.pch\ ProgressSDE/ProgressSDE-Prefix.pch\ normal\ arm64\ objective-c\ com.apple.compilers.llvm.clang.1_0.compiler
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/SDKSettings.plist 0 1486051586 997 33204
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/CoreServices/SystemVersion.plist 0 1493252968 418 33188
-InputFile    /Users/delacey/nativescript/ProgressSDE/platforms/ios/ProgressSDE/ProgressSDE-Prefix.pch 0 1498272379 236 33188
+InputFile    /Users/delacey/nativescript/ProgressSDE/platforms/ios/ProgressSDE/ProgressSDE-Prefix.pch 0 1500390675 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/SDKSettings.plist 0 1486051586 997 33204
-InputFile    /Users/delacey/nativescript/ProgressSDE/platforms/ios/ProgressSDE/ProgressSDE-Prefix.pch 0 1498272379 236 33188
+InputFile    /Users/delacey/nativescript/ProgressSDE/platforms/ios/ProgressSDE/ProgressSDE-Prefix.pch 0 1500390675 236 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/Availability.h 0 1487248621 16257 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/AvailabilityInternal.h 0 1485390706 2638930 33188
 InputFile    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h 0 1487923300 6943 33188

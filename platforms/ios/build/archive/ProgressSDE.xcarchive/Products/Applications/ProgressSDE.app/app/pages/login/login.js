@@ -48,21 +48,18 @@ LoginPage.prototype.signIn = function(args) {
     pw = view.getViewById(parent, "pw");
     console.log(email.text);
 
-    
-    Kinvey.User.logout()
-        .then(function() {
-            
-            return Kinvey.User.login(email.text, pw.text);
-
-        })
+    // login with KinveyAuth
+    //
+    var promise = Kinvey.User.login(email.text, pw.text)
         .then(function(user) {
             console.log(user);
             topmost().navigate("pages/home/home");
-            console.log('logged in');
         })
         .catch(function(error) {
-            console.log(error.message);
+            console.log(error);
         });
+
+    //
 };
 
 LoginPage.prototype.logout = function(args) {
@@ -74,13 +71,13 @@ LoginPage.prototype.logout = function(args) {
         .then(function(user) {
             console.log(user);
             var dialogs = require("ui/dialogs");
-dialogs.alert({
-    title: "Logout",
-    message: "The user has successfully logged out.",
-    okButtonText: "ok"
-}).then(function() {
-    console.log("Dialog closed!");
-});
+            dialogs.alert({
+                title: "Logout",
+                message: "The user has successfully logged out.",
+                okButtonText: "ok"
+            }).then(function() {
+                console.log("Dialog closed!");
+            });
 
             console.log('logged out');
         })
@@ -90,35 +87,20 @@ dialogs.alert({
 }
 
 LoginPage.prototype.signInMIC = function(args) {
-    var sender = args.object;
-    var parent = sender.parent;
 
-    console.log('signIn');
-    email = view.getViewById(parent, "email");
-    pw = view.getViewById(parent, "pw");
-    console.log(email.text);
+    console.log('signInMIC');
 
-
-    Kinvey.User.logout()
-        .then(function() {
-            console.log('logging out MIC user');
-
-        })
+    // login with MIC
+    //
+    Kinvey.User.loginWithMIC('http://localhost:8100', Kinvey.AuthorizationGrant.AuthorizationCodeLoginPage, { version: 'v2' })
         .then(function(user) {
-            Kinvey.User.loginWithMIC('http://localhost:8100',
-                    Kinvey.AuthorizationGrant.AuthorizationLoginPage, { version: "v2" })
-                .then(function(user) {
-                    console.log(user);
-                    topmost().navigate("pages/home/home");
-                    console.log('logged in');
-                })
-                .catch(function(error) {
-                    console.log(error.message);
-                });
-        })
-        .catch(function(error) {
-            console.log(error.message);
+            console.log(user);
+            topmost().navigate("pages/home/home");
+        }).catch(function(error) {
+            console.log(error);
         });
+
+    //    
 }
 
 module.exports = new LoginPage();

@@ -10,7 +10,7 @@
         "spec": "1.4.1",
         "type": "version"
       },
-      "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk"
+      "/Users/delacey/nativescript/CoreSDK"
     ]
   ],
   "_from": "loglevel@1.4.1",
@@ -44,7 +44,7 @@
   "_shasum": "95b383f91a3c2756fd4ab093667e4309161f2bcd",
   "_shrinkwrap": null,
   "_spec": "loglevel@1.4.1",
-  "_where": "/Users/delacey/nativescript/ProgressSDE/node_modules/kinvey-js-sdk",
+  "_where": "/Users/delacey/nativescript/CoreSDK",
   "author": {
     "name": "Tim Perry",
     "email": "pimterry@gmail.com",

@@ -26,10 +26,6 @@ var _isEmpty = require('lodash/isEmpty');
 
 var _isEmpty2 = _interopRequireDefault(_isEmpty);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _client = require('../../client');
 
 var _client2 = _interopRequireDefault(_client);
@@ -132,11 +128,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname + '/login'
-        }),
+        url: '' + this.client.apiHostname + this.pathname + '/login',
         body: credentials,
         properties: options.properties,
         timeout: options.timeout,
@@ -253,11 +245,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.Session,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname + '/_logout'
-        }),
+        url: '' + this.client.apiHostname + this.pathname + '/_logout',
         properties: options.properties,
         timeout: options.timeout,
         client: this.client
@@ -305,11 +293,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname
-        }),
+        url: '' + this.client.apiHostname + this.pathname,
         body: (0, _isEmpty2.default)(data) ? null : data,
         properties: options.properties,
         timeout: options.timeout,
@@ -370,11 +354,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.GET,
         authType: _request.AuthType.Session,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname + '/_me'
-        }),
+        url: '' + this.client.apiHostname + this.pathname + '/_me',
         properties: options.properties,
         timeout: options.timeout
       });
@@ -551,11 +531,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: client.apiProtocol,
-          host: client.apiHost,
-          pathname: '/rpc/' + client.appKey + '/' + username + '/user-email-verification-initiate'
-        }),
+        url: client.apiHostname + '/rpc/' + client.appKey + '/' + username + '/user-email-verification-initiate',
         properties: options.properties,
         timeout: options.timeout,
         client: client
@@ -581,11 +557,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: client.apiProtocol,
-          host: client.apiHost,
-          pathname: '/rpc/' + client.appKey + '/user-forgot-username'
-        }),
+        url: client.apiHostname + '/rpc/' + client.appKey + '/user-forgot-username',
         properties: options.properties,
         data: { email: email },
         timeout: options.timeout,
@@ -612,11 +584,7 @@ var User = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.App,
-        url: _url2.default.format({
-          protocol: client.apiProtocol,
-          host: client.apiHost,
-          pathname: '/rpc/' + client.appKey + '/' + username + '/user-password-reset-initiate'
-        }),
+        url: client.apiHostname + '/rpc/' + client.appKey + '/' + username + '/user-password-reset-initiate',
         properties: options.properties,
         timeout: options.timeout,
         client: client

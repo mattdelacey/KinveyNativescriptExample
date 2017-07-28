@@ -36,10 +36,6 @@ var _map = require('lodash/map');
 
 var _map2 = _interopRequireDefault(_map);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _request2 = require('../../request');
 
 var _errors = require('../../errors');
@@ -104,11 +100,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this2.client.apiProtocol,
-            host: _this2.client.apiHost,
-            pathname: _this2.pathname
-          }),
+          url: '' + _this2.client.apiHostname + _this2.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -148,11 +140,7 @@ var CacheStore = function (_NetworkStore) {
             }).then(function (networkEntities) {
               var request = new _request2.CacheRequest({
                 method: _request2.RequestMethod.PUT,
-                url: _url2.default.format({
-                  protocol: _this2.client.apiProtocol,
-                  host: _this2.client.apiHost,
-                  pathname: _this2.pathname
-                }),
+                url: '' + _this2.client.apiHostname + _this2.pathname,
                 properties: options.properties,
                 body: networkEntities,
                 timeout: options.timeout
@@ -192,11 +180,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this3.client.apiProtocol,
-            host: _this3.client.apiHost,
-            pathname: _this3.pathname + '/' + id
-          }),
+          url: '' + _this3.client.apiHostname + _this3.pathname + '/' + id,
           properties: options.properties,
           timeout: options.timeout
         });
@@ -227,11 +211,7 @@ var CacheStore = function (_NetworkStore) {
             }).then(function (networkEntity) {
               var request = new _request2.CacheRequest({
                 method: _request2.RequestMethod.PUT,
-                url: _url2.default.format({
-                  protocol: _this3.client.apiProtocol,
-                  host: _this3.client.apiHost,
-                  pathname: _this3.pathname
-                }),
+                url: '' + _this3.client.apiHostname + _this3.pathname,
                 properties: options.properties,
                 body: networkEntity,
                 timeout: options.timeout
@@ -270,11 +250,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.POST,
-          url: _url2.default.format({
-            protocol: _this4.client.apiProtocol,
-            host: _this4.client.apiHost,
-            pathname: _this4.pathname + '/_group'
-          }),
+          url: '' + _this4.client.apiHostname + _this4.pathname + '/_group',
           properties: options.properties,
           aggregation: aggregation,
           timeout: options.timeout
@@ -334,11 +310,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this5.client.apiProtocol,
-            host: _this5.client.apiHost,
-            pathname: _this5.pathname
-          }),
+          url: '' + _this5.client.apiHostname + _this5.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -403,11 +375,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.POST,
-          url: _url2.default.format({
-            protocol: _this6.client.apiProtocol,
-            host: _this6.client.apiHost,
-            pathname: _this6.pathname
-          }),
+          url: '' + _this6.client.apiHostname + _this6.pathname,
           properties: options.properties,
           body: entity,
           timeout: options.timeout
@@ -468,11 +436,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.PUT,
-          url: _url2.default.format({
-            protocol: _this7.client.apiProtocol,
-            host: _this7.client.apiHost,
-            pathname: _this7.pathname + '/' + entity._id
-          }),
+          url: '' + _this7.client.apiHostname + _this7.pathname + '/' + entity._id,
           properties: options.properties,
           body: entity,
           timeout: options.timeout
@@ -524,11 +488,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this8.client.apiProtocol,
-            host: _this8.client.apiHost,
-            pathname: _this8.pathname
-          }),
+          url: '' + _this8.client.apiHostname + _this8.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -580,11 +540,7 @@ var CacheStore = function (_NetworkStore) {
             if ((0, _utils.isDefined)(result.error) === false) {
               var _request = new _request2.CacheRequest({
                 method: _request2.RequestMethod.DELETE,
-                url: _url2.default.format({
-                  protocol: _this8.client.apiProtocol,
-                  host: _this8.client.apiHost,
-                  pathname: _this8.pathname + '/' + result._id
-                }),
+                url: '' + _this8.client.apiHostname + _this8.pathname + '/' + result._id,
                 properties: options.properties,
                 authType: _request2.AuthType.Default,
                 timeout: options.timeout
@@ -627,11 +583,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this9.client.apiProtocol,
-            host: _this9.client.apiHost,
-            pathname: _this9.pathname + '/' + id
-          }),
+          url: '' + _this9.client.apiHostname + _this9.pathname + '/' + id,
           properties: options.properties,
           authType: _request2.AuthType.Default,
           timeout: options.timeout
@@ -675,11 +627,7 @@ var CacheStore = function (_NetworkStore) {
         }).then(function (entity) {
           var request = new _request2.CacheRequest({
             method: _request2.RequestMethod.DELETE,
-            url: _url2.default.format({
-              protocol: _this9.client.apiProtocol,
-              host: _this9.client.apiHost,
-              pathname: _this9.pathname + '/' + entity._id
-            }),
+            url: '' + _this9.client.apiHostname + _this9.pathname + '/' + entity._id,
             properties: options.properties,
             authType: _request2.AuthType.Default,
             timeout: options.timeout
@@ -712,11 +660,7 @@ var CacheStore = function (_NetworkStore) {
 
         var request = new _request2.CacheRequest({
           method: _request2.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this10.client.apiProtocol,
-            host: _this10.client.apiHost,
-            pathname: _this10.pathname
-          }),
+          url: '' + _this10.client.apiHostname + _this10.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -743,11 +687,7 @@ var CacheStore = function (_NetworkStore) {
             }).then(function (entity) {
               var request = new _request2.CacheRequest({
                 method: _request2.RequestMethod.DELETE,
-                url: _url2.default.format({
-                  protocol: _this10.client.apiProtocol,
-                  host: _this10.client.apiHost,
-                  pathname: _this10.pathname + '/' + entity._id
-                }),
+                url: '' + _this10.client.apiHostname + _this10.pathname + '/' + entity._id,
                 properties: options.properties,
                 authType: _request2.AuthType.Default,
                 timeout: options.timeout
@@ -800,11 +740,7 @@ var CacheStore = function (_NetworkStore) {
         return _this11.clear(query, options).then(function () {
           var saveRequest = new _request2.CacheRequest({
             method: _request2.RequestMethod.PUT,
-            url: _url2.default.format({
-              protocol: _this11.client.apiProtocol,
-              host: _this11.client.apiHost,
-              pathname: _this11.pathname
-            }),
+            url: '' + _this11.client.apiHostname + _this11.pathname,
             properties: options.properties,
             body: entities,
             timeout: options.timeout

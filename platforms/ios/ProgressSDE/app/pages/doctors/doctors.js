@@ -1,24 +1,15 @@
 var BasePage = require("../../shared/BasePage");
 var topmost = require("ui/frame").topmost;
 var view = require("ui/core/view");
-//var Observable = require("data/observable").Observable;
 var observable = require("data/observable");
-var observableArray = require("data/observable-array");
 var Kinvey = require('kinvey-nativescript-sdk').Kinvey;
-
-var observableModule = require("data/observable");
-var observableArrayModule = require("data/observable-array");
 var Frame = require("ui/frame");
-
 var AccountsPage = function() {};
 AccountsPage.prototype = new BasePage();
 AccountsPage.prototype.constructor = AccountsPage;
-var array = new observableArray.ObservableArray();
-var observeMe;
 var myItems;
 var observable_array_1 = require("data/observable-array");
-var observable_1 = require("data/observable");
-var tmpobservable;
+var tmpobservable = new observable.Observable();;
 
 // Place any code you want to run when the home page loads here.
 AccountsPage.prototype.contentLoaded = function(args) {
@@ -26,44 +17,46 @@ AccountsPage.prototype.contentLoaded = function(args) {
 
     myItems = new observable_array_1.ObservableArray();
 
-    var dataStore = Kinvey.DataStore.collection('accounts', Kinvey.DataStoreType.Network);
-    var stream = dataStore.find();
-    stream.subscribe(function onNext(entities) {
-        while(myItems.length > 0) {
-            myItems.pop();
-        }
+    var dataStore = Kinvey.DataStore.collection('doctors', Kinvey.DataStoreType.Network);
 
-        for (i=0; i < entities.length; i++) {
+    // load doctor data
+    //
+    var subscription = dataStore.find()
+        .subscribe(function(entities) {
+            console.log(entities);
+            while(myItems.length > 0 ) {
+                myItems.pop();
+            }
+            for (i=0;i<entities.length;i++) {
+                console.log(entities[i]);
+                myItems.push(entities[i]);
+            }
 
-            console.log(entities[i]);
-            myItems.push(entities[i]);
-        }
-        
-        tmpobservable = new observable_1.Observable();
-        tmpobservable.set("myItems", myItems);
-        page.bindingContext = tmpobservable;
+            tmpobservable.set("myItems", myItems);
+            page.bindingContext = tmpobservable;
+        }, function(error) {
+            console.log(error);
+        }, function() {
+            console.log('pulled doctors');
+        });
 
-    }, function onError(error) {
-        console.log(error);
-    }, function onComplete() {
-        console.log('account data fetch complete');
-    });
+    //
 };
 
 AccountsPage.prototype.refreshMe = function(args) {
     console.log('refreshMe');
 
-    var dataStore = Kinvey.DataStore.collection('accounts', Kinvey.DataStoreType.Network);
+    var dataStore = Kinvey.DataStore.collection('doctors', Kinvey.DataStoreType.Network);
     var stream = dataStore.find();
     stream.subscribe(function onNext(entities) {
 
         console.log(entities.length);
 
-        while(myItems.length > 0) {
+        while (myItems.length > 0) {
             myItems.pop();
         }
 
-        for (i=0; i < entities.length; i++) {
+        for (i = 0; i < entities.length; i++) {
 
             console.log(entities[i]);
             myItems.push(entities[i]);
@@ -72,13 +65,13 @@ AccountsPage.prototype.refreshMe = function(args) {
     }, function onError(error) {
         console.log(error);
     }, function onComplete() {
-        
-        console.log('account data fetch complete');
+
+        console.log('doctors data fetch complete');
     });
 };
 
 function onPageLoad(args) {
-    console.log('accounts page loaded');
+    console.log('doctors page loaded');
 
 };
 

@@ -6,7 +6,6 @@ clang Invocation:
  "clang-tool" "-cc1" "-triple" "i386-apple-ios8.0.0" "-fsyntax-only" "-disable-free" "-disable-llvm-verifier" "-discard-value-names" "-main-file-name" "umbrella.h" "-mrelocation-model" "pic" "-pic-level" "2" "-mthread-model" "posix" "-mdisable-fp-elim" "-masm-verbose" "-target-cpu" "yonah" "-target-linker-version" "264.3.102" "-v" "-dwarf-column-info" "-debugger-tuning=lldb" "-resource-dir" "../lib/clang/3.9.0" "-isysroot" "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk" "-iquote" "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain/SAMKeychain.framework/Headers" "-I" "/Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator/include" "-I" "/Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-sqlite/platforms/ios" "-I" "/Users/delacey/nativescript/ProgressSDE/platforms/ios/internal" "-I" "/Users/delacey/nativescript/ProgressSDE/platforms/ios/internal/TKLiveSync/include" "-F/Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator" "-F/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain" "-F/Users/delacey/nativescript/ProgressSDE/platforms/ios/internal/" "-F/Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-push-notifications/platforms/ios" "-F/Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-telerik-ui/platforms/ios" "-F/Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/tns-core-modules-widgets/platforms/ios" "-D" "COCOAPODS=1" "-D" "DEBUG=1" "-Wno-unknown-pragmas" "-Wno-ignored-attributes" "-Wno-nullability-completeness" "-Wno-expansion-to-defined" "-std=gnu99" "-fdebug-compilation-dir" "/Users/delacey/nativescript/ProgressSDE/platforms/ios/internal/metadata-generator/bin" "-ferror-limit" "0" "-fmessage-length" "0" "-stack-protector" "1" "-fblocks" "-fimplicit-module-maps" "-fobjc-runtime=ios-8.0.0" "-fencode-extended-block-signature" "-fobjc-exceptions" "-fexceptions" "-fmax-type-align=16" "-fdiagnostics-show-option" "-x" "objective-c" "umbrella.h"
 
 ignoring nonexistent directory "/Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator/include"
-ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain"
 ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain/SAMKeychain.framework/Headers"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/local/include"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/Library/Frameworks"
@@ -16,6 +15,7 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal/TKLiveSync/include
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator (framework directory)
+ /Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-push-notifications/platforms/ios (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-telerik-ui/platforms/ios (framework directory)
@@ -33,7 +33,6 @@ clang Invocation:
 
 clang -cc1 version 3.9.0 based upon LLVM 3.9.0 default target x86_64-apple-darwin16.0.0
 ignoring nonexistent directory "/Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator/include"
-ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain"
 ignoring nonexistent directory "/Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain/SAMKeychain.framework/Headers"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/local/include"
 ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/Library/Frameworks"
@@ -43,6 +42,7 @@ ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platf
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal/TKLiveSync/include
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/build/emulator (framework directory)
+ /Users/delacey/Library/Developer/Xcode/DerivedData/ProgressSDE-fcoezrmdduumavakcawdtesqyice/Build/Products/Debug-iphonesimulator/SAMKeychain (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/internal (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-push-notifications/platforms/ios (framework directory)
  /Users/delacey/nativescript/ProgressSDE/platforms/ios/../../node_modules/nativescript-telerik-ui/platforms/ios (framework directory)

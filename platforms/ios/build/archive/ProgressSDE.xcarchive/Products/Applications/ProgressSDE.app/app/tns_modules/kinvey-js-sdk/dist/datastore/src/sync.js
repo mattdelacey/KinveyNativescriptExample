@@ -27,10 +27,6 @@ var _isString = require('lodash/isString');
 
 var _isString2 = _interopRequireDefault(_isString);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _request3 = require('../../request');
 
 var _errors = require('../../errors');
@@ -91,11 +87,7 @@ var SyncManager = function () {
 
       var request = new _request3.CacheRequest({
         method: _request3.RequestMethod.GET,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.backendPathname
-        }),
+        url: '' + this.client.apiHostname + this.backendPathname,
         query: query,
         properties: options.properties,
         timeout: options.timeout,
@@ -115,11 +107,7 @@ var SyncManager = function () {
 
         var request = new _request3.CacheRequest({
           method: _request3.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this.client.apiProtocol,
-            host: _this.client.apiHost,
-            pathname: _this.pathname
-          }),
+          url: '' + _this.client.apiHostname + _this.pathname,
           properties: options.properties,
           query: syncQuery,
           timeout: options.timeout,
@@ -190,11 +178,7 @@ var SyncManager = function () {
         var query = new _query2.default().equalTo('entityId', id);
         var findRequest = new _request3.CacheRequest({
           method: _request3.RequestMethod.GET,
-          url: _url2.default.format({
-            protocol: _this2.client.apiProtocol,
-            host: _this2.client.apiHost,
-            pathname: _this2.pathname
-          }),
+          url: '' + _this2.client.apiHostname + _this2.pathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout
@@ -209,11 +193,7 @@ var SyncManager = function () {
 
           var request = new _request3.CacheRequest({
             method: _request3.RequestMethod.PUT,
-            url: _url2.default.format({
-              protocol: _this2.client.apiProtocol,
-              host: _this2.client.apiHost,
-              pathname: _this2.pathname
-            }),
+            url: '' + _this2.client.apiHostname + _this2.pathname,
             properties: options.properties,
             body: syncEntity,
             timeout: options.timeout
@@ -255,11 +235,7 @@ var SyncManager = function () {
         var config = {
           method: _request3.RequestMethod.GET,
           authType: _request3.AuthType.Default,
-          url: _url2.default.format({
-            protocol: _this3.client.apiProtocol,
-            host: _this3.client.apiHost,
-            pathname: _this3.backendPathname
-          }),
+          url: '' + _this3.client.apiHostname + _this3.backendPathname,
           properties: options.properties,
           query: query,
           timeout: options.timeout,
@@ -310,11 +286,7 @@ var SyncManager = function () {
                   var request = new _request3.KinveyRequest({
                     method: _request3.RequestMethod.DELETE,
                     authType: _request3.AuthType.Default,
-                    url: _url2.default.format({
-                      protocol: _this4.client.apiProtocol,
-                      host: _this4.client.apiHost,
-                      pathname: _this4.backendPathname + '/' + entityId
-                    }),
+                    url: '' + _this4.client.apiHostname + _this4.backendPathname + '/' + entityId,
                     properties: options.properties,
                     timeout: options.timeout,
                     client: _this4.client
@@ -322,11 +294,7 @@ var SyncManager = function () {
                   return request.execute().then(function () {
                     var request = new _request3.CacheRequest({
                       method: _request3.RequestMethod.DELETE,
-                      url: _url2.default.format({
-                        protocol: _this4.client.apiProtocol,
-                        host: _this4.client.apiHost,
-                        pathname: _this4.pathname + '/' + syncEntity._id
-                      }),
+                      url: '' + _this4.client.apiHostname + _this4.pathname + '/' + syncEntity._id,
                       properties: options.properties,
                       timeout: options.timeout
                     });
@@ -347,11 +315,7 @@ var SyncManager = function () {
 
                   var _request = new _request3.CacheRequest({
                     method: _request3.RequestMethod.GET,
-                    url: _url2.default.format({
-                      protocol: _this4.client.apiProtocol,
-                      host: _this4.client.apiHost,
-                      pathname: _this4.backendPathname + '/' + entityId
-                    }),
+                    url: '' + _this4.client.apiHostname + _this4.backendPathname + '/' + entityId,
                     properties: options.properties,
                     timeout: options.timeout
                   });
@@ -361,11 +325,7 @@ var SyncManager = function () {
                     var request = new _request3.KinveyRequest({
                       method: _request3.RequestMethod.PUT,
                       authType: _request3.AuthType.Default,
-                      url: _url2.default.format({
-                        protocol: _this4.client.apiProtocol,
-                        host: _this4.client.apiHost,
-                        pathname: _this4.backendPathname + '/' + entityId
-                      }),
+                      url: '' + _this4.client.apiHostname + _this4.backendPathname + '/' + entityId,
                       properties: options.properties,
                       timeout: options.timeout,
                       body: entity,
@@ -379,11 +339,7 @@ var SyncManager = function () {
                       }
 
                       request.method = _request3.RequestMethod.POST;
-                      request.url = _url2.default.format({
-                        protocol: _this4.client.apiProtocol,
-                        host: _this4.client.apiHost,
-                        pathname: _this4.backendPathname
-                      });
+                      request.url = '' + _this4.client.apiHostname + _this4.backendPathname;
                     }
 
                     return request.execute().then(function (response) {
@@ -391,22 +347,14 @@ var SyncManager = function () {
                     }).then(function (entity) {
                       var request = new _request3.CacheRequest({
                         method: _request3.RequestMethod.DELETE,
-                        url: _url2.default.format({
-                          protocol: _this4.client.apiProtocol,
-                          host: _this4.client.apiHost,
-                          pathname: _this4.pathname + '/' + syncEntity._id
-                        }),
+                        url: '' + _this4.client.apiHostname + _this4.pathname + '/' + syncEntity._id,
                         properties: options.properties,
                         timeout: options.timeout
                       });
                       return request.execute().then(function () {
                         var request = new _request3.CacheRequest({
                           method: _request3.RequestMethod.PUT,
-                          url: _url2.default.format({
-                            protocol: _this4.client.apiProtocol,
-                            host: _this4.client.apiHost,
-                            pathname: _this4.backendPathname + '/' + entity._id
-                          }),
+                          url: '' + _this4.client.apiHostname + _this4.backendPathname + '/' + entity._id,
                           properties: options.properties,
                           timeout: options.timeout,
                           body: entity
@@ -418,11 +366,7 @@ var SyncManager = function () {
                         if (local) {
                           var _request2 = new _request3.CacheRequest({
                             method: _request3.RequestMethod.DELETE,
-                            url: _url2.default.format({
-                              protocol: _this4.client.apiProtocol,
-                              host: _this4.client.apiHost,
-                              pathname: _this4.backendPathname + '/' + entityId
-                            }),
+                            url: '' + _this4.client.apiHostname + _this4.backendPathname + '/' + entityId,
                             properties: options.properties,
                             timeout: options.timeout
                           });
@@ -505,11 +449,7 @@ var SyncManager = function () {
         return _es6Promise2.default.all((0, _map2.default)(entities, function (entity) {
           var request = new _request3.CacheRequest({
             method: _request3.RequestMethod.DELETE,
-            url: _url2.default.format({
-              protocol: _this5.client.apiProtocol,
-              host: _this5.client.apiHost,
-              pathname: _this5.pathname + '/' + entity._id
-            }),
+            url: '' + _this5.client.apiHostname + _this5.pathname + '/' + entity._id,
             properties: options.properties,
             timeout: options.timeout
           });

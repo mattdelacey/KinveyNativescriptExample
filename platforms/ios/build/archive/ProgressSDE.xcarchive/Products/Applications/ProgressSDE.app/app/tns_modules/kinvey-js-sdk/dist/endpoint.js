@@ -14,10 +14,6 @@ var _isString = require('lodash/isString');
 
 var _isString2 = _interopRequireDefault(_isString);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _errors = require('./errors');
 
 var _client = require('./client');
@@ -55,11 +51,7 @@ var CustomEndpoint = function () {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.Default,
-        url: _url2.default.format({
-          protocol: client.apiProtocol,
-          host: client.apiHost,
-          pathname: '/rpc/' + client.appKey + '/custom/' + endpoint
-        }),
+        url: client.apiHostname + '/rpc/' + client.appKey + '/custom/' + endpoint,
         properties: options.properties,
         body: args,
         timeout: options.timeout,

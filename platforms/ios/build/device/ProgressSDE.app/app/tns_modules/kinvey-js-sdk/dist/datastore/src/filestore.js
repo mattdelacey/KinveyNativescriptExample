@@ -26,10 +26,6 @@ var _isNumber = require('lodash/isNumber');
 
 var _isNumber2 = _interopRequireDefault(_isNumber);
 
-var _url = require('url');
-
-var _url2 = _interopRequireDefault(_url);
-
 var _request = require('../../request');
 
 var _errors = require('../../errors');
@@ -92,12 +88,7 @@ var FileStore = function (_NetworkStore) {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.GET,
           authType: _request.AuthType.Default,
-          url: _url2.default.format({
-            protocol: _this2.client.apiProtocol,
-            host: _this2.client.apiHost,
-            pathname: _this2.pathname,
-            query: queryStringObject
-          }),
+          url: (0, _utils.appendQuery)('' + _this2.client.apiHostname + _this2.pathname, queryStringObject),
           properties: options.properties,
           query: query,
           timeout: options.timeout,
@@ -151,12 +142,7 @@ var FileStore = function (_NetworkStore) {
         var request = new _request.KinveyRequest({
           method: _request.RequestMethod.GET,
           authType: _request.AuthType.Default,
-          url: _url2.default.format({
-            protocol: _this3.client.apiProtocol,
-            host: _this3.client.apiHost,
-            pathname: _this3.pathname + '/' + name,
-            query: queryStringObject
-          }),
+          url: (0, _utils.appendQuery)('' + _this3.client.apiHostname + _this3.pathname + '/' + name, queryStringObject),
           properties: options.properties,
           timeout: options.timeout,
           client: _this3.client
@@ -224,11 +210,7 @@ var FileStore = function (_NetworkStore) {
       var request = new _request.KinveyRequest({
         method: _request.RequestMethod.POST,
         authType: _request.AuthType.Default,
-        url: _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname
-        }),
+        url: '' + this.client.apiHostname + this.pathname,
         properties: options.properties,
         timeout: options.timeout,
         body: metadata,
@@ -238,11 +220,7 @@ var FileStore = function (_NetworkStore) {
 
       if (metadata._id) {
         request.method = _request.RequestMethod.PUT;
-        request.url = _url2.default.format({
-          protocol: this.client.apiProtocol,
-          host: this.client.apiHost,
-          pathname: this.pathname + '/' + metadata._id
-        });
+        request.url = '' + this.client.apiHostname + this.pathname + '/' + metadata._id;
       }
 
       return request.execute().then(function (response) {
