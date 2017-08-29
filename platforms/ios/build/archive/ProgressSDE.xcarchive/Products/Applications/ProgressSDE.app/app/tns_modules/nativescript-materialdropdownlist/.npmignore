@@ -1,8 +1,0 @@
-demo/
-*.png
-*.gif
-*.log
-
-# IDEs
-.vscode/
-.idea/
